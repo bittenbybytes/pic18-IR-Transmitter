@@ -1,0 +1,25 @@
+__stringdata: SMALLCONST, 2058 0 51
+_IdleI2C: CODE, 4400 0 12
+_dpowers: SMALLCONST, 2048 0 10
+_printStringLcd: CODE, 3364 0 140
+_ConfigureOscillator: CODE, 4422 0 2
+_main: CODE, 3022 0 342
+_resetLcd: CODE, 4248 0 36
+_high_isr: CODE, 8 0 3604
+_readTCN75: CODE, 3612 0 100
+_write_cmd: CODE, 4038 0 62
+_InitApp: CODE, 4412 0 10
+__initialization: CODE, 4158 0 44
+___lwdiv: CODE, 3808 0 86
+_isdigit: CODE, 4212 0 36
+_sprintf: CODE, 2110 0 912
+___lwmod: CODE, 3968 0 70
+_ReadI2C: CODE, 4284 0 28
+_WriteI2C: CODE, 3894 0 74
+___wmul: CODE, 4100 0 58
+_initI2C: CODE, 4362 0 22
+_low_isr: CODE, 24 0 138
+_initLcd: CODE, 3712 0 96
+_OpenI2C: CODE, 4312 0 28
+_clearLcd: CODE, 4340 0 22
+Total: 5983

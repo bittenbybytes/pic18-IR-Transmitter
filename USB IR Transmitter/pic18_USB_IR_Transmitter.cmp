@@ -1,0 +1,185 @@
+Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 18.01.2014 11:20:14
+
+BeginCmp
+TimeStamp = /52D43BC9;
+Reference = C1;
+ValeurCmp = 47uF;
+IdModule  = SM2010;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D44076;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45390;
+Reference = C3;
+ValeurCmp = 22p;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4546D;
+Reference = C4;
+ValeurCmp = 22p;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D44DE2;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D44088;
+Reference = C6;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D43B15;
+Reference = CON1;
+ValeurCmp = USB-MINI-B;
+IdModule  = USB_MINI_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45EB7;
+Reference = D1;
+ValeurCmp = POWER_LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45E2B;
+Reference = D2;
+ValeurCmp = USER_LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45985;
+Reference = D3;
+ValeurCmp = IR_LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D46642;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D464AE;
+Reference = P2;
+ValeurCmp = CONN_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45B33;
+Reference = P3;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45EDE;
+Reference = P4;
+ValeurCmp = CONN_6;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4648F;
+Reference = P5;
+ValeurCmp = CONN_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D65590;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = PIN_ARRAY_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D8FEBD;
+Reference = P7;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_8_50mil;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4589F;
+Reference = Q1;
+ValeurCmp = 2N7002;
+IdModule  = SOT23GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45EB1;
+Reference = R1;
+ValeurCmp = 330R;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D44FCF;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D45E25;
+Reference = R3;
+ValeurCmp = 330R;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4596A;
+Reference = R4;
+ValeurCmp = 100R;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D469B5;
+Reference = R5;
+ValeurCmp = 4k7;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D46B46;
+Reference = R6;
+ValeurCmp = 4k7;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4664F;
+Reference = U1;
+ValeurCmp = 1586-PIC18F4550-I/PT;
+IdModule  = bittenbybytes/axylf;
+EndCmp
+
+BeginCmp
+TimeStamp = /52D4526C;
+Reference = X1;
+ValeurCmp = 12Mhz;
+IdModule  = Q_49U3HMS;
+EndCmp
+
+EndListe

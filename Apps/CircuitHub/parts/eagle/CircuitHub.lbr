@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+</layers>
+<library>
+<description>CircuitHub library</description>
+<packages>
+<package name="melissa/do9bj">
+<wire x1="-0.5" y1="2.05" x2="2.7" y2="2.05" width="0.1" layer="51"/>
+<wire x1="2.7" y1="2.05" x2="2.7" y2="0.44999999999999973" width="0.1" layer="51"/>
+<wire x1="2.7" y1="0.44999999999999973" x2="-0.5" y2="0.44999999999999973" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="0.44999999999999973" x2="-0.5" y2="2.05" width="0.1" layer="51"/>
+<wire x1="-0.55" y1="3.15" x2="2.75" y2="3.15" width="0.1" layer="39"/>
+<wire x1="2.75" y1="3.15" x2="2.75" y2="-0.6500000000000004" width="0.1" layer="39"/>
+<wire x1="2.75" y1="-0.6500000000000004" x2="-0.55" y2="-0.6500000000000004" width="0.1" layer="39"/>
+<wire x1="-0.55" y1="-0.6500000000000004" x2="-0.55" y2="3.15" width="0.1" layer="39"/>
+<wire x1="0.85" y1="2.05" x2="1.3500000000000003" y2="2.05" width="0.1" layer="21"/>
+<wire x1="0.85" y1="0.44999999999999996" x2="1.3500000000000003" y2="0.44999999999999996" width="0.1" layer="21"/>
+<wire x1="3.0500000000000003" y1="2.05" x2="2.7" y2="2.05" width="0.1" layer="21"/>
+<wire x1="2.7" y1="2.05" x2="2.7" y2="0.44999999999999996" width="0.1" layer="21"/>
+<wire x1="2.7" y1="0.44999999999999996" x2="3.0500000000000003" y2="0.44999999999999996" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="2.05" x2="-0.5" y2="2.05" width="0.1" layer="21"/>
+<wire x1="-0.5" y1="2.05" x2="-0.5" y2="0.44999999999999996" width="0.1" layer="21"/>
+<wire x1="-0.5" y1="0.44999999999999996" x2="-0.85" y2="0.44999999999999996" width="0.1" layer="21"/>
+<text x="1.1" y="1.25" size="0.3" layer="51" align="center">&gt;NAME</text>
+<text x="-0.5" y="2.3499999999999996" size="0.3" layer="21" align="center">&gt;NAME</text>
+<smd name="" x="0" y="0" dx="1.4" dy="1.2" layer="1" roundness="0" rot="R0"/>
+<smd name="" x="2.2" y="0" dx="1.4" dy="1.2" layer="1" roundness="0" rot="R0"/>
+<smd name="" x="2.2" y="2.5" dx="1.4" dy="1.2" layer="1" roundness="0" rot="R0"/>
+<smd name="" x="0" y="2.5" dx="1.4" dy="1.2" layer="1" roundness="0" rot="R0"/>
+</package>
+<package name="melissa/dintu">
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.05" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.05" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.05" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.05" layer="51"/>
+<wire x1="-5.1" y1="5.1" x2="5.1" y2="5.1" width="0.05" layer="39"/>
+<wire x1="5.1" y1="5.1" x2="5.1" y2="-5.1" width="0.05" layer="39"/>
+<wire x1="5.1" y1="-5.1" x2="-5.1" y2="-5.1" width="0.05" layer="39"/>
+<wire x1="-5.1" y1="-5.1" x2="-5.1" y2="5.1" width="0.05" layer="39"/>
+<circle x="-2.75" y="-5.449999999999999" radius="0.15" width="0.3" layer="21"/>
+<circle x="-2.693933982822018" y="-2.693933982822018" radius="0.15" width="0.3" layer="21"/>
+<wire x1="-2.5" y1="-3.5" x2="-3.5" y2="-2.5" width="0.05" layer="51"/>
+<wire x1="3.6" y1="3.6" x2="3.6" y2="3.165" width="0.2" layer="21"/>
+<wire x1="3.165" y1="3.6" x2="3.6" y2="3.6" width="0.2" layer="21"/>
+<wire x1="3.6" y1="-3.165" x2="3.6" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="3.165" y1="-3.6" x2="3.6" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-3.165" x2="-3.6" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-3.6" x2="-3.165" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="3.6" x2="-3.165" y2="3.6" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="3.6" x2="-3.6" y2="3.165" width="0.2" layer="21"/>
+<text x="0" y="0" size="0.3" layer="51" align="center">&gt;NAME</text>
+<text x="-4.449999999999999" y="5.25" size="0.3" layer="21" align="center">&gt;NAME</text>
+<smd name="1" x="-2.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="2" x="-2.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="3" x="-1.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="4" x="-1.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="5" x="-0.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="6" x="-0.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="7" x="0.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="8" x="0.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="9" x="1.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="10" x="1.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="11" x="2.25" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="12" x="2.75" y="-4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R270"/>
+<smd name="13" x="4.146966991411009" y="-2.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="14" x="4.146966991411009" y="-2.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="15" x="4.146966991411009" y="-1.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="16" x="4.146966991411009" y="-1.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="17" x="4.146966991411009" y="-0.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="18" x="4.146966991411009" y="-0.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="19" x="4.146966991411009" y="0.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="20" x="4.146966991411009" y="0.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="21" x="4.146966991411009" y="1.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="22" x="4.146966991411009" y="1.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="23" x="4.146966991411009" y="2.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="24" x="4.146966991411009" y="2.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R0"/>
+<smd name="25" x="2.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="26" x="2.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="27" x="1.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="28" x="1.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="29" x="0.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="30" x="0.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="31" x="-0.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="32" x="-0.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="33" x="-1.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="34" x="-1.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="35" x="-2.25" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="36" x="-2.75" y="4.146966991411009" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R90"/>
+<smd name="37" x="-4.146966991411009" y="2.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="38" x="-4.146966991411009" y="2.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="39" x="-4.146966991411009" y="1.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="40" x="-4.146966991411009" y="1.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="41" x="-4.146966991411009" y="0.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="42" x="-4.146966991411009" y="0.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="43" x="-4.146966991411009" y="-0.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="44" x="-4.146966991411009" y="-0.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="45" x="-4.146966991411009" y="-1.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="46" x="-4.146966991411009" y="-1.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="47" x="-4.146966991411009" y="-2.25" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="48" x="-4.146966991411009" y="-2.75" dx="1.4060660171779817" dy="0.23" layer="1" roundness="100" rot="R180"/>
+</package>
+<package name="bittenbybytes/dlgfi">
+<wire x1="-5.1" y1="2.65" x2="5.1" y2="2.65" width="0.05" layer="51"/>
+<wire x1="5.1" y1="2.65" x2="5.1" y2="-2.65" width="0.05" layer="51"/>
+<wire x1="5.1" y1="-2.65" x2="-5.1" y2="-2.65" width="0.05" layer="51"/>
+<wire x1="-5.1" y1="-2.65" x2="-5.1" y2="2.65" width="0.05" layer="51"/>
+<wire x1="-5.5" y1="4.699999999999999" x2="5.5" y2="4.699999999999999" width="0.05" layer="39"/>
+<wire x1="5.5" y1="4.699999999999999" x2="5.5" y2="-4.699999999999999" width="0.05" layer="39"/>
+<wire x1="5.5" y1="-4.699999999999999" x2="-5.5" y2="-4.699999999999999" width="0.05" layer="39"/>
+<wire x1="-5.5" y1="-4.699999999999999" x2="-5.5" y2="4.699999999999999" width="0.05" layer="39"/>
+<wire x1="-5.199999999999999" y1="2.3000000000000003" x2="5.199999999999999" y2="2.3000000000000003" width="0.2" layer="21"/>
+<wire x1="5.199999999999999" y1="2.3000000000000003" x2="5.199999999999999" y2="-2.3000000000000003" width="0.2" layer="21"/>
+<wire x1="5.199999999999999" y1="-2.3000000000000003" x2="-5.199999999999999" y2="-2.3000000000000003" width="0.2" layer="21"/>
+<wire x1="-5.199999999999999" y1="-2.3000000000000003" x2="-5.199999999999999" y2="2.3000000000000003" width="0.2" layer="21"/>
+<circle x="-4.2250000000000005" y="-5.049999999999999" radius="0.15" width="0.3" layer="21"/>
+<wire x1="-4.1" y1="-2.65" x2="-5.1" y2="-1.65" width="0.05" layer="51"/>
+<wire x1="-4.6" y1="2.3000000000000003" x2="-4.6" y2="-2.3000000000000003" width="0.2" layer="21"/>
+<text x="0" y="0" size="0.3" layer="51" align="center">&gt;NAME</text>
+<text x="-5.199999999999999" y="4.85" size="0.3" layer="21" align="center">&gt;NAME</text>
+<smd name="1" x="-4.2250000000000005" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="0" rot="R270"/>
+<smd name="2" x="-3.575" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="3" x="-2.9250000000000007" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="4" x="-2.2750000000000004" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="5" x="-1.6250000000000002" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="6" x="-0.9750000000000005" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="7" x="-0.3250000000000002" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="8" x="0.3249999999999993" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="9" x="0.9749999999999996" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="10" x="1.625" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="11" x="2.2749999999999995" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="12" x="2.925" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="13" x="3.575" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="14" x="4.2250000000000005" y="-3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R270"/>
+<smd name="15" x="4.2250000000000005" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="3.575000000000001" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="2.9250000000000007" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="18" x="2.2750000000000004" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="19" x="1.6250000000000004" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="0.9750000000000005" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="0.3250000000000002" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="22" x="-0.3249999999999993" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="-0.9749999999999996" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="-1.6250000000000002" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="-2.2749999999999995" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="26" x="-2.925" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="27" x="-3.575" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+<smd name="28" x="-4.2250000000000005" y="3.5249999999999995" dx="1.8499999999999992" dy="0.44000000000000006" layer="1" roundness="100" rot="R90"/>
+</package>
+<package name="bittenbybytes/axylf">
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.05" layer="51"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.05" layer="51"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.05" layer="51"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.05" layer="51"/>
+<wire x1="-6.725" y1="6.725" x2="6.725" y2="6.725" width="0.05" layer="39"/>
+<wire x1="6.725" y1="6.725" x2="6.725" y2="-6.725" width="0.05" layer="39"/>
+<wire x1="6.725" y1="-6.725" x2="-6.725" y2="-6.725" width="0.05" layer="39"/>
+<wire x1="-6.725" y1="-6.725" x2="-6.725" y2="6.725" width="0.05" layer="39"/>
+<circle x="-4" y="-7.074999999999999" radius="0.15" width="0.3" layer="21"/>
+<circle x="-4.13606403689245" y="-4.13606403689245" radius="0.15" width="0.3" layer="21"/>
+<wire x1="-4" y1="-5" x2="-5" y2="-4" width="0.05" layer="51"/>
+<wire x1="5.1" y1="5.1" x2="5.1" y2="4.555" width="0.2" layer="21"/>
+<wire x1="4.555" y1="5.1" x2="5.1" y2="5.1" width="0.2" layer="21"/>
+<wire x1="5.1" y1="-4.555" x2="5.1" y2="-5.1" width="0.2" layer="21"/>
+<wire x1="4.555" y1="-5.1" x2="5.1" y2="-5.1" width="0.2" layer="21"/>
+<wire x1="-5.1" y1="-4.555" x2="-5.1" y2="-5.1" width="0.2" layer="21"/>
+<wire x1="-5.1" y1="-5.1" x2="-4.555" y2="-5.1" width="0.2" layer="21"/>
+<wire x1="-5.1" y1="5.1" x2="-4.555" y2="5.1" width="0.2" layer="21"/>
+<wire x1="-5.1" y1="5.1" x2="-5.1" y2="4.555" width="0.2" layer="21"/>
+<text x="0" y="0" size="0.3" layer="51" align="center">&gt;NAME</text>
+<text x="-6.074999999999999" y="6.875" size="0.3" layer="21" align="center">&gt;NAME</text>
+<smd name="1" x="-3.9999999999999996" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="2" x="-3.2" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="3" x="-2.4" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="4" x="-1.5999999999999996" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="5" x="-0.7999999999999998" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="6" x="0" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="7" x="0.8000000000000007" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="8" x="1.6000000000000005" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="9" x="2.4000000000000004" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="10" x="3.2" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="11" x="4" y="-5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R270"/>
+<smd name="12" x="5.680532018446225" y="-4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="13" x="5.680532018446225" y="-3.2" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="14" x="5.680532018446225" y="-2.4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="15" x="5.680532018446225" y="-1.5999999999999996" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="16" x="5.680532018446225" y="-0.7999999999999998" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="17" x="5.680532018446225" y="0" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="18" x="5.680532018446225" y="0.8000000000000006" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="19" x="5.680532018446225" y="1.6000000000000005" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="20" x="5.680532018446225" y="2.4000000000000004" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="21" x="5.680532018446225" y="3.2" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="22" x="5.680532018446225" y="4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R0"/>
+<smd name="23" x="4" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="3.2" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="2.4" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="26" x="1.5999999999999996" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="27" x="0.7999999999999998" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="28" x="0" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="29" x="-0.8000000000000007" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="30" x="-1.6000000000000005" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="31" x="-2.4000000000000004" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="32" x="-3.2" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="33" x="-3.9999999999999996" y="5.680532018446225" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R90"/>
+<smd name="34" x="-5.680532018446225" y="4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="35" x="-5.680532018446225" y="3.2" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="36" x="-5.680532018446225" y="2.4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="37" x="-5.680532018446225" y="1.5999999999999996" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="38" x="-5.680532018446225" y="0.7999999999999997" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="39" x="-5.680532018446225" y="0" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="40" x="-5.680532018446225" y="-0.8000000000000007" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="41" x="-5.680532018446225" y="-1.6000000000000005" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="42" x="-5.680532018446225" y="-2.4000000000000004" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="43" x="-5.680532018446225" y="-3.2" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+<smd name="44" x="-5.680532018446225" y="-4" dx="1.5889359631075495" dy="0.51" layer="1" roundness="100" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="melissa/dfuw7">
+<text x="0" y="0" size="1.5" layer="95" align="bottom-left">&gt;NAME</text>
+<text x="0" y="-15.24" size="1.5" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="-2.54" x2="8.89" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="-2.54" x2="8.89" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="-7.62" x2="6.35" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="-7.62" x2="6.35" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="5.08" y2="-6.35" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-3.81" x2="10.16" y2="-6.35" width="0.4064" layer="94"/>
+<wire x1="0" y1="-12.7" x2="15.24" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="0.6349999999999998" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="0.6349999999999998" y1="-5.08" x2="0" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="15.24" y2="-5.08" width="0.4064" layer="94"/>
+<pin name="A@1" x="-5.08" y="-5.08" length="middle" direction="in" function="none" rot="R0" visible="off"/>
+<pin name="DNC0@1" x="-2.54" y="-12.7" length="short" direction="in" function="none" rot="R0" visible="off"/>
+<pin name="DNC1@1" x="20.32" y="-5.08" length="middle" direction="in" function="none" rot="R180" visible="off"/>
+<pin name="B@1" x="17.78" y="-12.7" length="short" direction="in" function="none" rot="R180" visible="off"/>
+</symbol>
+<symbol name="bittenbybytes/dlg86">
+<text x="0" y="0" size="1.5" layer="95" align="bottom-left">&gt;NAME</text>
+<text x="0" y="-63.5" size="1.5" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="66.04" y2="0" width="0.4064" layer="94"/>
+<wire x1="66.04" y1="0" x2="66.04" y2="-63.5" width="0.4064" layer="94"/>
+<wire x1="66.04" y1="-63.5" x2="0" y2="-63.5" width="0.4064" layer="94"/>
+<wire x1="0" y1="-63.5" x2="0" y2="0" width="0.4064" layer="94"/>
+<pin name="PIO2_6@1" x="-5.08" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO3_0/DTR_N@1" x="71.12" y="-33.02" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO2_0/DTR_N/SSEL1@1" x="-5.08" y="-5.079999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="R/PIO1_2/AD3/CT32B1_MAT1@1" x="71.12" y="-35.56" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RESET_N/PIO0_0@1" x="-5.08" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="R/PIO1_1/AD2/CT32B1_MAT0@1" x="71.12" y="-38.1" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_1/CLKOUT/CT32B0_MAT2@1" x="-5.08" y="-10.16" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="R/PIO1_0/AD1/CT32B1_CAP0@1" x="71.12" y="-40.64" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VSS@1" x="-5.08" y="-12.7" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="XTALIN@1" x="-5.08" y="-15.239999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="XTALOUT@1" x="-5.08" y="-17.78" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VDD@1" x="-5.08" y="-20.32" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_8/CT16B1_CAP0@1" x="-5.08" y="-22.86" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_9/MOSI0/CT16B0_MAT1@1" x="71.12" y="-53.34" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_2/SSEL0/CT16B0_CAP0@1" x="-5.08" y="-25.4" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_8/MISO0/CT16B0_MAT0@1" x="71.12" y="-55.879999999999995" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="R/PIO0_11/AD0/CT32B0_MAT3@1" x="71.12" y="-43.18" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO2_11/SCK0@1" x="71.12" y="-45.72" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_10/AD6/CT16B1_MAT1@1" x="71.12" y="-48.260000000000005" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2@1" x="71.12" y="-50.8" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO2_9@1" x="-5.08" y="-60.96" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_7/CTS_N@1" x="-5.08" y="-58.42" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_6/SCK0@1" x="-5.08" y="-55.879999999999995" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO3_5@1" x="-5.08" y="-53.34" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_5@1" x="-5.08" y="-50.8" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_4@1" x="-5.08" y="-48.260000000000005" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO3_4@1" x="-5.08" y="-45.72" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_9/CT16B1_MAT0@1" x="-5.08" y="-43.18" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_5/SDA@1" x="-5.08" y="-40.64" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_10@1" x="71.12" y="-60.96" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_4/SCL@1" x="-5.08" y="-38.1" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_2/DCD_N/MISO1@1" x="71.12" y="-58.42" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO2_8@1" x="-5.08" y="-30.48" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_3@1" x="-5.08" y="-35.56" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_7@1" x="-5.08" y="-27.94" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO2_1/DSR_N/SCK1@1" x="-5.08" y="-33.02" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO3_1/DSR_N@1" x="71.12" y="-30.48" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO2_3/RI_N/MOSI1@1" x="71.12" y="-27.94" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="SWDIO/PIO1_3/AD4/CT32B1_MAT2@1" x="71.12" y="-25.4" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_4/AD5/CT32B1_MAT3/WAKEUP@1" x="71.12" y="-22.86" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VSS@2" x="71.12" y="-20.32" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_11/AD7@1" x="71.12" y="-17.78" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO3_2/DCD_N@1" x="71.12" y="-15.239999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VDD@2" x="71.12" y="-12.7" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_5/RTS_N/CT32B0_CAP0@1" x="71.12" y="-10.16" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_6/RXD/CT32B0_MAT0@1" x="71.12" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_7/TXD/CT32B0_MAT1@1" x="71.12" y="-5.079999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO3_3/RI_N@1" x="71.12" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+</symbol>
+<symbol name="bittenbybytes/dftya">
+<text x="0" y="0" size="1.5" layer="95" align="bottom-left">&gt;NAME</text>
+<text x="0" y="-68.58" size="1.5" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="83.82000000000001" y2="0" width="0.4064" layer="94"/>
+<wire x1="83.82000000000001" y1="0" x2="83.82000000000001" y2="-68.58" width="0.4064" layer="94"/>
+<wire x1="83.82000000000001" y1="-68.58" x2="0" y2="-68.58" width="0.4064" layer="94"/>
+<wire x1="0" y1="-68.58" x2="0" y2="0" width="0.4064" layer="94"/>
+<pin name="PIO1_25/CT32B0_MAT1@1" x="-5.08" y="-5.079999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_19/DTR_N/SSEL1@1" x="-5.08" y="-7.619999999999997" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RESET_N/PIO0_0@1" x="-5.08" y="-10.16" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE@1" x="-5.08" y="-12.7" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VSS@1" x="-5.08" y="-15.239999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="XTALIN@1" x="-5.08" y="-17.779999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="XTALOUT@1" x="-5.08" y="-20.32" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VDD@1" x="-5.08" y="-22.86" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_20/CT16B1_CAP0@1" x="-5.08" y="-25.4" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_2/SSEL0/CT16B0_CAP0@1" x="-5.08" y="-27.939999999999998" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_26/CT32B0_MAT2/RXD@1" x="-5.08" y="-30.48" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_27/CT32B0_MAT3/TXD@1" x="-5.08" y="-33.019999999999996" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_20/DSR_N/SCK1@1" x="-5.08" y="-35.56" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_3/USB_VBUS@1" x="-5.08" y="-38.1" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_4/SCL@1" x="-5.08" y="-40.64" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_5/SDA@1" x="-5.08" y="-43.18" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_21/CT16B1_MAT0/MOSI1@1" x="-5.08" y="-45.72" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_23/CT16B1_MAT1/SSEL1@1" x="-5.08" y="-48.26" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="USB_DM@1" x="-5.08" y="-50.8" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="USB_DP@1" x="-5.08" y="-53.34" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_24/CT32B0_MAT0@1" x="-5.08" y="-55.879999999999995" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_6/USB_CONNECT_N/SCK0@1" x="-5.08" y="-58.42" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO0_7/CTS_N@1" x="-5.08" y="-60.96" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_28/CT32B0_CAP0/SCLK@1" x="-5.08" y="-63.5" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="PIO1_31@1" x="88.9" y="-63.5" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_21/DCD_N/MISO1@1" x="88.9" y="-60.96" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_8/MISO0/CT16B0_MAT0@1" x="88.9" y="-58.42" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_9/MOSI0/CT16B0_MAT1@1" x="88.9" y="-55.879999999999995" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2@1" x="88.9" y="-53.34" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_22/AD6/CT16B1_MAT1/MISO1@1" x="88.9" y="-50.8" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_29/SCK0/CT32B0_CAP1@1" x="88.9" y="-48.26" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="TDI/PIO0_11/AD0/CT32B0_MAT3@1" x="88.9" y="-45.72" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="TMS/PIO0_12/AD1/CT32B1_CAP0@1" x="88.9" y="-43.18" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="TDO/PIO0_13/AD2/CT32B1_MAT0@1" x="88.9" y="-40.64" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="TRST_N/PIO0_14/AD3/CT32B1_MAT1@1" x="88.9" y="-38.1" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_13/DTR_N/CT16B0_MAT0/TXD@1" x="88.9" y="-35.56" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_14/DSR_N/CT16B0_MAT1/RXD@1" x="88.9" y="-33.019999999999996" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_22/RI_N/MOSI1@1" x="88.9" y="-30.48" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="SWDIO/PIO0_15/AD4/CT32B1_MAT2@1" x="88.9" y="-27.939999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_16/AD5/CT32B1_MAT3/WAKEUP@1" x="88.9" y="-25.4" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VSS@2" x="88.9" y="-22.86" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_23/AD7@1" x="88.9" y="-20.32" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_15/DCD_N/CT16B0_MAT2/SCK1@1" x="88.9" y="-17.779999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VDD@2" x="88.9" y="-15.239999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_17/RTS_N/CT32B0_CAP0/SCLK@1" x="88.9" y="-12.7" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_18/RXD/CT32B0_MAT0@1" x="88.9" y="-10.16" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO0_19/TXD/CT32B0_MAT1@1" x="88.9" y="-7.619999999999997" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="PIO1_16/RI_N/CT16B0_CAP0@1" x="88.9" y="-5.079999999999998" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+</symbol>
+<symbol name="bittenbybytes/axyem">
+<text x="0" y="0" size="1.5" layer="95" align="bottom-left">&gt;NAME</text>
+<text x="0" y="-38.1" size="1.5" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="33.02" y2="0" width="0.4064" layer="94"/>
+<wire x1="33.02" y1="0" x2="33.02" y2="-38.1" width="0.4064" layer="94"/>
+<wire x1="33.02" y1="-38.1" x2="0" y2="-38.1" width="0.4064" layer="94"/>
+<wire x1="0" y1="-38.1" x2="0" y2="0" width="0.4064" layer="94"/>
+<pin name="GPB0@1" x="-5.08" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB1@1" x="-5.08" y="-5.08" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB2@1" x="-5.08" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB3@1" x="-5.08" y="-10.16" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB4@1" x="-5.08" y="-12.700000000000001" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB5@1" x="-5.08" y="-15.24" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB6@1" x="-5.08" y="-17.78" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="GPB7@1" x="-5.08" y="-20.32" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VDD@1" x="-5.08" y="-22.86" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VSS@1" x="-5.08" y="-25.4" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="CS_N@1" x="-5.08" y="-27.94" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="SCK@1" x="-5.08" y="-30.48" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="SI@1" x="-5.08" y="-33.02" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="SO@1" x="-5.08" y="-35.56" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="A0@1" x="38.1" y="-35.56" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="A1@1" x="38.1" y="-33.02" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="A2@1" x="38.1" y="-30.48" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RESET_N@1" x="38.1" y="-27.94" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="INTB@1" x="38.1" y="-25.4" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="INTA@1" x="38.1" y="-22.86" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA0@1" x="38.1" y="-20.32" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA1@1" x="38.1" y="-17.78" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA2@1" x="38.1" y="-15.24" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA3@1" x="38.1" y="-12.700000000000001" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA4@1" x="38.1" y="-10.16" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA5@1" x="38.1" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA6@1" x="38.1" y="-5.08" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="GPA7@1" x="38.1" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+</symbol>
+<symbol name="bittenbybytes/dlggy">
+<text x="0" y="0" size="1.5" layer="95" align="bottom-left">&gt;NAME</text>
+<text x="0" y="-58.42" size="1.5" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="53.34" y2="0" width="0.4064" layer="94"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-58.42" width="0.4064" layer="94"/>
+<wire x1="53.34" y1="-58.42" x2="0" y2="-58.42" width="0.4064" layer="94"/>
+<wire x1="0" y1="-58.42" x2="0" y2="0" width="0.4064" layer="94"/>
+<pin name="RC7/RX/DT/SDO@1" x="-5.08" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RD4/SPP4@1" x="-5.08" y="-5.080000000000002" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RD5/SPP5/P1B@1" x="-5.08" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RD6/SPP6/P1C@1" x="-5.08" y="-10.16" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RD7/SPP7/P1D@1" x="-5.08" y="-12.7" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VSS@1" x="-5.08" y="-15.24" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="VDD@1" x="-5.08" y="-17.78" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB0/AN12/INT0/FLT0/SDI/SDA@1" x="-5.08" y="-20.32" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB1/AN10/INT1/SCK/SCL@1" x="-5.08" y="-22.86" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB2/AN8/INT2/VMO@1" x="-5.08" y="-25.400000000000002" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB3/AN9/CCP2(1)/VPO@1" x="-5.08" y="-27.94" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="NC/ICCK/ICPGC@1" x="-5.08" y="-30.48" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="NC/ICDT/ICPGD@1" x="-5.08" y="-33.02" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB4/AN11/KBI0/CSSPP@1" x="-5.08" y="-35.56" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB5/KBI1/PGM@1" x="-5.08" y="-38.1" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB7/KBI3/PGD@1" x="-5.08" y="-40.64" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RB6/KBI2/PGC@1" x="-5.08" y="-43.18" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="MCLR_N/VPP/RE3@1" x="-5.08" y="-45.72" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RA0/AN0@1" x="-5.08" y="-48.260000000000005" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RA1/AN1@1" x="-5.08" y="-50.8" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RA2/AN2/VREF-/CVREF@1" x="-5.08" y="-53.34" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RA3/AN3/VREF+@1" x="-5.08" y="-55.88" length="middle" direction="in" function="none" rot="R0" visible="both"/>
+<pin name="RA4/T0CKI/C1OUT/RCV@1" x="58.42" y="-55.88" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RA5/AN4/SS_N/HLVDIN/C2OUT@1" x="58.42" y="-53.34" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RE0/AN5/CK1SPP@1" x="58.42" y="-50.8" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RE1/AN6/CK2SPP@1" x="58.42" y="-48.260000000000005" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RE2/AN7/OESPP@1" x="58.42" y="-45.72" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VDD@2" x="58.42" y="-43.18" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VSS@2" x="58.42" y="-40.64" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="OSC1/CLKI@1" x="58.42" y="-38.1" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="OSC2/CLKO/RA6@1" x="58.42" y="-35.56" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC0/T1OSO/T13CKI@1" x="58.42" y="-33.02" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="NC/ICRST_N/ICVPP@1" x="58.42" y="-30.48" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="NC/ICPORTS@1" x="58.42" y="-27.94" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC1/T1OSI/CCP2/UOE_N@1" x="58.42" y="-25.400000000000002" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC2/CCP1/P1A@1" x="58.42" y="-22.86" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="VUSB@1" x="58.42" y="-20.32" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RD0/SPP0@1" x="58.42" y="-17.78" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RD1/SPP1@1" x="58.42" y="-15.24" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RD2/SPP2@1" x="58.42" y="-12.7" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RD3/SPP3@1" x="58.42" y="-10.16" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC4/D-/VM@1" x="58.42" y="-7.620000000000001" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC5/D+/VP@1" x="58.42" y="-5.080000000000002" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+<pin name="RC6/TX/CK@1" x="58.42" y="-2.539999999999999" length="middle" direction="in" function="none" rot="R180" visible="both"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="454-NX3225SA-16.000000MHZ-STD-CSR-1" prefix="Y">
+<gates>
+<gate name="melissa/dfuw7" symbol="melissa/dfuw7" x="10.16" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="melissa/do9bj">
+<connects>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://circuithub.com/parts/NDK/NX3225SA-16.000000MHZ-STD-CSR-1" constant="no"/>
+<attribute name="CircuitHubID" value="454" constant="no"/>
+<attribute name="symbolURN" value="melissa/dfuw7" constant="no"/>
+<attribute name="symbolRevision" value="bc718de269b9f6f80fb38f4b4d05aae0ba7cb32f" constant="no"/>
+<attribute name="footprintURN" value="melissa/do9bj" constant="no"/>
+<attribute name="footprintRevision" value="89db1866e143ce985a766618d784a0b720225900" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1250-LPC1114FBD48/301:1" prefix="U">
+<gates>
+<gate name="bittenbybytes/dlg86" symbol="bittenbybytes/dlg86" x="78.74000000000001" y="-31.75"/>
+</gates>
+<devices>
+<device name="" package="melissa/dintu">
+<connects>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_6@1" pad="1"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_0/DTR_N@1" pad="36"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_0/DTR_N/SSEL1@1" pad="2"/>
+<connect gate="bittenbybytes/dlg86" pin="R/PIO1_2/AD3/CT32B1_MAT1@1" pad="35"/>
+<connect gate="bittenbybytes/dlg86" pin="RESET_N/PIO0_0@1" pad="3"/>
+<connect gate="bittenbybytes/dlg86" pin="R/PIO1_1/AD2/CT32B1_MAT0@1" pad="34"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_1/CLKOUT/CT32B0_MAT2@1" pad="4"/>
+<connect gate="bittenbybytes/dlg86" pin="R/PIO1_0/AD1/CT32B1_CAP0@1" pad="33"/>
+<connect gate="bittenbybytes/dlg86" pin="VSS@1" pad="5"/>
+<connect gate="bittenbybytes/dlg86" pin="XTALIN@1" pad="6"/>
+<connect gate="bittenbybytes/dlg86" pin="XTALOUT@1" pad="7"/>
+<connect gate="bittenbybytes/dlg86" pin="VDD@1" pad="8"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_8/CT16B1_CAP0@1" pad="9"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_9/MOSI0/CT16B0_MAT1@1" pad="28"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_2/SSEL0/CT16B0_CAP0@1" pad="10"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_8/MISO0/CT16B0_MAT0@1" pad="27"/>
+<connect gate="bittenbybytes/dlg86" pin="R/PIO0_11/AD0/CT32B0_MAT3@1" pad="32"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_11/SCK0@1" pad="31"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_10/AD6/CT16B1_MAT1@1" pad="30"/>
+<connect gate="bittenbybytes/dlg86" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2@1" pad="29"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_9@1" pad="24"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_7/CTS_N@1" pad="23"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_6/SCK0@1" pad="22"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_5@1" pad="21"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_5@1" pad="20"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_4@1" pad="19"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_4@1" pad="18"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_9/CT16B1_MAT0@1" pad="17"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_5/SDA@1" pad="16"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_10@1" pad="25"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_4/SCL@1" pad="15"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_2/DCD_N/MISO1@1" pad="26"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_8@1" pad="12"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO0_3@1" pad="14"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_7@1" pad="11"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_1/DSR_N/SCK1@1" pad="13"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_1/DSR_N@1" pad="37"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO2_3/RI_N/MOSI1@1" pad="38"/>
+<connect gate="bittenbybytes/dlg86" pin="SWDIO/PIO1_3/AD4/CT32B1_MAT2@1" pad="39"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_4/AD5/CT32B1_MAT3/WAKEUP@1" pad="40"/>
+<connect gate="bittenbybytes/dlg86" pin="VSS@2" pad="41"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_11/AD7@1" pad="42"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_2/DCD_N@1" pad="43"/>
+<connect gate="bittenbybytes/dlg86" pin="VDD@2" pad="44"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_5/RTS_N/CT32B0_CAP0@1" pad="45"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_6/RXD/CT32B0_MAT0@1" pad="46"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO1_7/TXD/CT32B0_MAT1@1" pad="47"/>
+<connect gate="bittenbybytes/dlg86" pin="PIO3_3/RI_N@1" pad="48"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://circuithub.com/parts/NXP/LPC1114FBD48%2F301%3A1" constant="no"/>
+<attribute name="CircuitHubID" value="1250" constant="no"/>
+<attribute name="symbolURN" value="bittenbybytes/dlg86" constant="no"/>
+<attribute name="symbolRevision" value="f39890cea87cd470adc4ded07d9388108b1eae48" constant="no"/>
+<attribute name="footprintURN" value="melissa/dintu" constant="no"/>
+<attribute name="footprintRevision" value="80f05cb86d9e67aacf426a027030eab4869b28e1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1282-LPC11U24FBD48/401," prefix="U">
+<gates>
+<gate name="bittenbybytes/dftya" symbol="bittenbybytes/dftya" x="97.79" y="-34.29"/>
+</gates>
+<devices>
+<device name="" package="melissa/dintu">
+<connects>
+<connect gate="bittenbybytes/dftya" pin="PIO1_25/CT32B0_MAT1@1" pad="1"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_19/DTR_N/SSEL1@1" pad="2"/>
+<connect gate="bittenbybytes/dftya" pin="RESET_N/PIO0_0@1" pad="3"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE@1" pad="4"/>
+<connect gate="bittenbybytes/dftya" pin="VSS@1" pad="5"/>
+<connect gate="bittenbybytes/dftya" pin="XTALIN@1" pad="6"/>
+<connect gate="bittenbybytes/dftya" pin="XTALOUT@1" pad="7"/>
+<connect gate="bittenbybytes/dftya" pin="VDD@1" pad="8"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_20/CT16B1_CAP0@1" pad="9"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_2/SSEL0/CT16B0_CAP0@1" pad="10"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_26/CT32B0_MAT2/RXD@1" pad="11"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_27/CT32B0_MAT3/TXD@1" pad="12"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_20/DSR_N/SCK1@1" pad="13"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_3/USB_VBUS@1" pad="14"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_4/SCL@1" pad="15"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_5/SDA@1" pad="16"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_21/CT16B1_MAT0/MOSI1@1" pad="17"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_23/CT16B1_MAT1/SSEL1@1" pad="18"/>
+<connect gate="bittenbybytes/dftya" pin="USB_DM@1" pad="19"/>
+<connect gate="bittenbybytes/dftya" pin="USB_DP@1" pad="20"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_24/CT32B0_MAT0@1" pad="21"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_6/USB_CONNECT_N/SCK0@1" pad="22"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_7/CTS_N@1" pad="23"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_28/CT32B0_CAP0/SCLK@1" pad="24"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_31@1" pad="25"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_21/DCD_N/MISO1@1" pad="26"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_8/MISO0/CT16B0_MAT0@1" pad="27"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_9/MOSI0/CT16B0_MAT1@1" pad="28"/>
+<connect gate="bittenbybytes/dftya" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2@1" pad="29"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_22/AD6/CT16B1_MAT1/MISO1@1" pad="30"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_29/SCK0/CT32B0_CAP1@1" pad="31"/>
+<connect gate="bittenbybytes/dftya" pin="TDI/PIO0_11/AD0/CT32B0_MAT3@1" pad="32"/>
+<connect gate="bittenbybytes/dftya" pin="TMS/PIO0_12/AD1/CT32B1_CAP0@1" pad="33"/>
+<connect gate="bittenbybytes/dftya" pin="TDO/PIO0_13/AD2/CT32B1_MAT0@1" pad="34"/>
+<connect gate="bittenbybytes/dftya" pin="TRST_N/PIO0_14/AD3/CT32B1_MAT1@1" pad="35"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_13/DTR_N/CT16B0_MAT0/TXD@1" pad="36"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_14/DSR_N/CT16B0_MAT1/RXD@1" pad="37"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_22/RI_N/MOSI1@1" pad="38"/>
+<connect gate="bittenbybytes/dftya" pin="SWDIO/PIO0_15/AD4/CT32B1_MAT2@1" pad="39"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_16/AD5/CT32B1_MAT3/WAKEUP@1" pad="40"/>
+<connect gate="bittenbybytes/dftya" pin="VSS@2" pad="41"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_23/AD7@1" pad="42"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_15/DCD_N/CT16B0_MAT2/SCK1@1" pad="43"/>
+<connect gate="bittenbybytes/dftya" pin="VDD@2" pad="44"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_17/RTS_N/CT32B0_CAP0/SCLK@1" pad="45"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_18/RXD/CT32B0_MAT0@1" pad="46"/>
+<connect gate="bittenbybytes/dftya" pin="PIO0_19/TXD/CT32B0_MAT1@1" pad="47"/>
+<connect gate="bittenbybytes/dftya" pin="PIO1_16/RI_N/CT16B0_CAP0@1" pad="48"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://circuithub.com/parts/NXP/LPC11U24FBD48%2F401%2C" constant="no"/>
+<attribute name="CircuitHubID" value="1282" constant="no"/>
+<attribute name="symbolURN" value="bittenbybytes/dftya" constant="no"/>
+<attribute name="symbolRevision" value="931ce2c9f3c4cc92ff0dd597b16d87b2932b4d45" constant="no"/>
+<attribute name="footprintURN" value="melissa/dintu" constant="no"/>
+<attribute name="footprintRevision" value="80f05cb86d9e67aacf426a027030eab4869b28e1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1313-MCP23S17-E/SS" prefix="U">
+<gates>
+<gate name="bittenbybytes/axyem" symbol="bittenbybytes/axyem" x="46.99" y="-19.05"/>
+</gates>
+<devices>
+<device name="" package="bittenbybytes/dlgfi">
+<connects>
+<connect gate="bittenbybytes/axyem" pin="GPB0@1" pad="1"/>
+<connect gate="bittenbybytes/axyem" pin="GPB1@1" pad="2"/>
+<connect gate="bittenbybytes/axyem" pin="GPB2@1" pad="3"/>
+<connect gate="bittenbybytes/axyem" pin="GPB3@1" pad="4"/>
+<connect gate="bittenbybytes/axyem" pin="GPB4@1" pad="5"/>
+<connect gate="bittenbybytes/axyem" pin="GPB5@1" pad="6"/>
+<connect gate="bittenbybytes/axyem" pin="GPB6@1" pad="7"/>
+<connect gate="bittenbybytes/axyem" pin="GPB7@1" pad="8"/>
+<connect gate="bittenbybytes/axyem" pin="VDD@1" pad="9"/>
+<connect gate="bittenbybytes/axyem" pin="VSS@1" pad="10"/>
+<connect gate="bittenbybytes/axyem" pin="CS_N@1" pad="11"/>
+<connect gate="bittenbybytes/axyem" pin="SCK@1" pad="12"/>
+<connect gate="bittenbybytes/axyem" pin="SI@1" pad="13"/>
+<connect gate="bittenbybytes/axyem" pin="SO@1" pad="14"/>
+<connect gate="bittenbybytes/axyem" pin="A0@1" pad="15"/>
+<connect gate="bittenbybytes/axyem" pin="A1@1" pad="16"/>
+<connect gate="bittenbybytes/axyem" pin="A2@1" pad="17"/>
+<connect gate="bittenbybytes/axyem" pin="RESET_N@1" pad="18"/>
+<connect gate="bittenbybytes/axyem" pin="INTB@1" pad="19"/>
+<connect gate="bittenbybytes/axyem" pin="INTA@1" pad="20"/>
+<connect gate="bittenbybytes/axyem" pin="GPA0@1" pad="21"/>
+<connect gate="bittenbybytes/axyem" pin="GPA1@1" pad="22"/>
+<connect gate="bittenbybytes/axyem" pin="GPA2@1" pad="23"/>
+<connect gate="bittenbybytes/axyem" pin="GPA3@1" pad="24"/>
+<connect gate="bittenbybytes/axyem" pin="GPA4@1" pad="25"/>
+<connect gate="bittenbybytes/axyem" pin="GPA5@1" pad="26"/>
+<connect gate="bittenbybytes/axyem" pin="GPA6@1" pad="27"/>
+<connect gate="bittenbybytes/axyem" pin="GPA7@1" pad="28"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://circuithub.com/parts/MICROCHIP/MCP23S17-E%2FSS" constant="no"/>
+<attribute name="CircuitHubID" value="1313" constant="no"/>
+<attribute name="symbolURN" value="bittenbybytes/axyem" constant="no"/>
+<attribute name="symbolRevision" value="a4218d078ea21605fbf64b9e63d24c3a0754434f" constant="no"/>
+<attribute name="footprintURN" value="bittenbybytes/dlgfi" constant="no"/>
+<attribute name="footprintRevision" value="fccb079752b65206f0f54441aebacb90bbc1be34" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1586-PIC18F4550-I/PT" prefix="U">
+<gates>
+<gate name="bittenbybytes/dlggy" symbol="bittenbybytes/dlggy" x="67.31" y="-29.21"/>
+</gates>
+<devices>
+<device name="" package="bittenbybytes/axylf">
+<connects>
+<connect gate="bittenbybytes/dlggy" pin="RC7/RX/DT/SDO@1" pad="1"/>
+<connect gate="bittenbybytes/dlggy" pin="RD4/SPP4@1" pad="2"/>
+<connect gate="bittenbybytes/dlggy" pin="RD5/SPP5/P1B@1" pad="3"/>
+<connect gate="bittenbybytes/dlggy" pin="RD6/SPP6/P1C@1" pad="4"/>
+<connect gate="bittenbybytes/dlggy" pin="RD7/SPP7/P1D@1" pad="5"/>
+<connect gate="bittenbybytes/dlggy" pin="VSS@1" pad="6"/>
+<connect gate="bittenbybytes/dlggy" pin="VDD@1" pad="7"/>
+<connect gate="bittenbybytes/dlggy" pin="RB0/AN12/INT0/FLT0/SDI/SDA@1" pad="8"/>
+<connect gate="bittenbybytes/dlggy" pin="RB1/AN10/INT1/SCK/SCL@1" pad="9"/>
+<connect gate="bittenbybytes/dlggy" pin="RB2/AN8/INT2/VMO@1" pad="10"/>
+<connect gate="bittenbybytes/dlggy" pin="RB3/AN9/CCP2(1)/VPO@1" pad="11"/>
+<connect gate="bittenbybytes/dlggy" pin="NC/ICCK/ICPGC@1" pad="12"/>
+<connect gate="bittenbybytes/dlggy" pin="NC/ICDT/ICPGD@1" pad="13"/>
+<connect gate="bittenbybytes/dlggy" pin="RB4/AN11/KBI0/CSSPP@1" pad="14"/>
+<connect gate="bittenbybytes/dlggy" pin="RB5/KBI1/PGM@1" pad="15"/>
+<connect gate="bittenbybytes/dlggy" pin="RB7/KBI3/PGD@1" pad="16"/>
+<connect gate="bittenbybytes/dlggy" pin="RB6/KBI2/PGC@1" pad="17"/>
+<connect gate="bittenbybytes/dlggy" pin="MCLR_N/VPP/RE3@1" pad="18"/>
+<connect gate="bittenbybytes/dlggy" pin="RA0/AN0@1" pad="19"/>
+<connect gate="bittenbybytes/dlggy" pin="RA1/AN1@1" pad="20"/>
+<connect gate="bittenbybytes/dlggy" pin="RA2/AN2/VREF-/CVREF@1" pad="21"/>
+<connect gate="bittenbybytes/dlggy" pin="RA3/AN3/VREF+@1" pad="22"/>
+<connect gate="bittenbybytes/dlggy" pin="RA4/T0CKI/C1OUT/RCV@1" pad="23"/>
+<connect gate="bittenbybytes/dlggy" pin="RA5/AN4/SS_N/HLVDIN/C2OUT@1" pad="24"/>
+<connect gate="bittenbybytes/dlggy" pin="RE0/AN5/CK1SPP@1" pad="25"/>
+<connect gate="bittenbybytes/dlggy" pin="RE1/AN6/CK2SPP@1" pad="26"/>
+<connect gate="bittenbybytes/dlggy" pin="RE2/AN7/OESPP@1" pad="27"/>
+<connect gate="bittenbybytes/dlggy" pin="VDD@2" pad="28"/>
+<connect gate="bittenbybytes/dlggy" pin="VSS@2" pad="29"/>
+<connect gate="bittenbybytes/dlggy" pin="OSC1/CLKI@1" pad="30"/>
+<connect gate="bittenbybytes/dlggy" pin="OSC2/CLKO/RA6@1" pad="31"/>
+<connect gate="bittenbybytes/dlggy" pin="RC0/T1OSO/T13CKI@1" pad="32"/>
+<connect gate="bittenbybytes/dlggy" pin="NC/ICRST_N/ICVPP@1" pad="33"/>
+<connect gate="bittenbybytes/dlggy" pin="NC/ICPORTS@1" pad="34"/>
+<connect gate="bittenbybytes/dlggy" pin="RC1/T1OSI/CCP2/UOE_N@1" pad="35"/>
+<connect gate="bittenbybytes/dlggy" pin="RC2/CCP1/P1A@1" pad="36"/>
+<connect gate="bittenbybytes/dlggy" pin="VUSB@1" pad="37"/>
+<connect gate="bittenbybytes/dlggy" pin="RD0/SPP0@1" pad="38"/>
+<connect gate="bittenbybytes/dlggy" pin="RD1/SPP1@1" pad="39"/>
+<connect gate="bittenbybytes/dlggy" pin="RD2/SPP2@1" pad="40"/>
+<connect gate="bittenbybytes/dlggy" pin="RD3/SPP3@1" pad="41"/>
+<connect gate="bittenbybytes/dlggy" pin="RC4/D-/VM@1" pad="42"/>
+<connect gate="bittenbybytes/dlggy" pin="RC5/D+/VP@1" pad="43"/>
+<connect gate="bittenbybytes/dlggy" pin="RC6/TX/CK@1" pad="44"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://circuithub.com/parts/MICROCHIP/PIC18F4550-I%2FPT" constant="no"/>
+<attribute name="CircuitHubID" value="1586" constant="no"/>
+<attribute name="symbolURN" value="bittenbybytes/dlggy" constant="no"/>
+<attribute name="symbolRevision" value="6fcab3e7681bbab4137038658c0f0c25a00fc3ae" constant="no"/>
+<attribute name="footprintURN" value="bittenbybytes/axylf" constant="no"/>
+<attribute name="footprintRevision" value="cbd665ea3e7566542faf2266d4c1fac7b0158e08" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

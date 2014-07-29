@@ -1,0 +1,8 @@
+Warning[2054] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 100 : suspicious pointer conversion
+Warning[2066] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 100 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 101 : suspicious pointer conversion
+Warning[2058] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 104 : call of function without prototype
+Warning[2058] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 136 : call of function without prototype
+Warning[2058] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 155 : call of function without prototype
+Warning[2058] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 161 : call of function without prototype
+Warning[2058] C:\Users\h.angerer\Desktop\18f2550_CDC\PIC18F2550BB_USB_BASE\main.c 168 : call of function without prototype

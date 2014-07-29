@@ -1,0 +1,733 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2550 ]
+"37 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[e E5040 stopbits `uc
+one 0
+oneandahalf 1
+two 2
+]
+[e E5044 parity `uc
+none 0
+odd 1
+even 2
+mark 3
+space 4
+]
+"111 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[e E4772 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"67 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\main.c
+[e E4772 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"68 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _initCDC initCDC `(v  1 e 0 0 ]
+"85
+[v _user_configured_init user_configured_init `(v  1 e 0 0 ]
+"132
+[v _cdc_setup cdc_setup `(v  1 e 0 0 ]
+"191
+[v _cdc_get_line_coding cdc_get_line_coding `(v  1 e 0 0 ]
+"195
+[v _cdc_set_line_coding_data cdc_set_line_coding_data `(v  1 e 0 0 ]
+"226
+[v _cdc_set_line_coding_status cdc_set_line_coding_status `(v  1 e 0 0 ]
+"230
+[v _cdc_set_control_line_state_status cdc_set_control_line_state_status `(v  1 e 0 0 ]
+"236
+[v _WaitOutReady WaitOutReady `(v  1 e 0 0 ]
+"243
+[v _WaitInReady WaitInReady `(v  1 e 0 0 ]
+"248
+[v _getOutReady getOutReady `(uc  1 e 1 0 ]
+"254
+[v _getInReady getInReady `(uc  1 e 1 0 ]
+"260
+[v _getda_cdc getda_cdc `(uc  1 e 1 0 ]
+"283
+[v _putda_cdc putda_cdc `(uc  1 e 1 0 ]
+"304
+[v _SendZLP SendZLP `(v  1 e 0 0 ]
+"309
+[v _CDC_Flush_In_Now CDC_Flush_In_Now `(v  1 e 0 0 ]
+"324
+[v _CDCFlushOnTimeout CDCFlushOnTimeout `(v  1 e 0 0 ]
+"350
+[v _putc_cdc putc_cdc `(v  1 e 0 0 ]
+"370
+[v _getc_cdc getc_cdc `(uc  1 e 1 0 ]
+"391
+[v _poll_getc_cdc poll_getc_cdc `(uc  1 e 1 0 ]
+"419
+[v _peek_getc_cdc peek_getc_cdc `(uc  1 e 1 0 ]
+"93 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_init usb_init `(v  1 e 0 0 ]
+"109
+[v _usb_start usb_start `(v  1 e 0 0 ]
+"116
+[v _usb_handle_error usb_handle_error `(v  1 e 0 0 ]
+"121
+[v _usb_handle_reset usb_handle_reset `(v  1 e 0 0 ]
+"133
+[v _ClearUSBtoDefault ClearUSBtoDefault `(v  1 e 0 0 ]
+"184
+[v _usb_handler usb_handler `(v  1 e 0 0 ]
+"217
+[v _usb_handle_transaction usb_handle_transaction `(v  1 e 0 0 ]
+"240
+[v _usb_handle_setup usb_handle_setup `(v  1 e 0 0 ]
+"287
+[v _usb_handle_StandardDeviceRequest usb_handle_StandardDeviceRequest `(v  1 e 0 0 ]
+"408
+[v _usb_handle_StandardInterfaceRequest usb_handle_StandardInterfaceRequest `(v  1 e 0 0 ]
+"439
+[v _usb_handle_StandardEndpointRequest usb_handle_StandardEndpointRequest `(v  1 e 0 0 ]
+"509
+[v _usb_handle_in usb_handle_in `(v  1 e 0 0 ]
+"515
+[v _usb_handle_out usb_handle_out `(v  1 e 0 0 ]
+"521
+[v _usb_register_sof_handler usb_register_sof_handler `(v  1 e 0 0 ]
+"525
+[v _usb_register_class_setup_handler usb_register_class_setup_handler `(v  1 e 0 0 ]
+"529
+[v _usb_register_vendor_setup_handler usb_register_vendor_setup_handler `(v  1 e 0 0 ]
+"533
+[v _usb_set_in_handler usb_set_in_handler `(v  1 e 0 0 ]
+"537
+[v _usb_set_out_handler usb_set_out_handler `(v  1 e 0 0 ]
+"547
+[v _usb_ack_dat1 usb_ack_dat1 `(v  1 e 0 0 ]
+"552
+[v _usb_RequestError usb_RequestError `(v  1 e 0 0 ]
+"566
+[v _usb_set_address usb_set_address `(v  1 e 0 0 ]
+"577
+[v _usb_send_rom usb_send_rom `(v  1 e 0 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"34 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"38 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"38 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"64 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"89 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"51 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"63 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"22 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"87 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"22 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"36 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"29 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asfladd.c
+[v ___asfladd __asfladd `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asfldiv.c
+[v ___asfldiv __asfldiv `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asflmul.c
+[v ___asflmul __asflmul `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asflsub.c
+[v ___asflsub __asflsub `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asftadd.c
+[v ___asftadd __asftadd `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asftdiv.c
+[v ___asftdiv __asftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asftmul.c
+[v ___asftmul __asftmul `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\asftsub.c
+[v ___asftsub __asftsub `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\aslmul.c
+[v ___aslmul __aslmul `(ul  1 e 4 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+"31 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\main.c
+[v _main main `(v  1 e 0 0 ]
+"93
+[v _SetupBoard SetupBoard `(v  1 e 0 0 ]
+"100
+[v _USBSuspend USBSuspend `(v  1 e 0 0 ]
+"30 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _parity_str parity_str `C[5]uc  1 e 5 0 ]
+[s S31 cdc_LineCodeing 7 `ul 1 dwDTERate 4 0 `E5040 1 bCharFormat 1 4 `E5044 1 bParityType 1 5 `uc 1 bDataBits 1 6 ]
+"37
+[v _linecodeing linecodeing `S31  1 e 7 0 ]
+"41
+[v _cdc_acm_in_buffer cdc_acm_in_buffer `[10]uc  1 e 10 0 ]
+"44
+[v _cdc_In_bufferA cdc_In_bufferA `[64]uc  1 e 64 0 ]
+"45
+[v _cdc_In_bufferB cdc_In_bufferB `[64]uc  1 e 64 0 ]
+"46
+[v _cdc_Out_bufferA cdc_Out_bufferA `[64]uc  1 e 64 0 ]
+"47
+[v _cdc_Out_bufferB cdc_Out_bufferB `[64]uc  1 e 64 0 ]
+[s S36 _cdc_ControlLineState 2 `uc 1 DTR 1 0 :1:0 
+`uc 1 RTS 1 0 :1:1 
+`uc 1 unused1 1 0 :6:2 
+`uc 1 unused2 1 1 ]
+"51
+[v _cls cls `S36  1 e 2 0 ]
+"52
+[v _cdc_In_len cdc_In_len `uc  1 e 1 0 ]
+"53
+[v _cdc_Out_len cdc_Out_len `VEuc  1 e 1 0 ]
+"54
+[v _IsInBufferA IsInBufferA `uc  1 e 1 0 ]
+"55
+[v _IsOutBufferA IsOutBufferA `uc  1 e 1 0 ]
+"56
+[v _InPtr InPtr `*.39uc  1 e 2 0 ]
+"57
+[v _OutPtr OutPtr `*.39uc  1 e 2 0 ]
+"58
+[v _LineStateUpdated LineStateUpdated `uc  1 e 1 0 ]
+"59
+[v _cdc_timeout_count cdc_timeout_count `uc  1 e 1 0 ]
+"60
+[v _ZLPpending ZLPpending `uc  1 e 1 0 ]
+"61
+[v _lock lock `uc  1 e 1 0 ]
+[s S41 BDENTRY 4 `uc 1 BDSTAT 1 0 `uc 1 BDCNT 1 1 `*.39uc 1 BDADDR 2 2 ]
+"63
+[v _CDC_Outbdp CDC_Outbdp `*.39S41  1 e 2 0 ]
+[v _CDC_Inbdp CDC_Inbdp `*.39S41  1 e 2 0 ]
+"64
+[v _CDCFunctionError CDCFunctionError `uc  1 e 1 0 ]
+"66
+[v _cdc_trf_state cdc_trf_state `VEuc  1 e 1 0 ]
+"30 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_device_descriptor usb_device_descriptor `*.33Cuc  1 e 3 0 ]
+"31
+[v _usb_config_descriptor usb_config_descriptor `*.33Cuc  1 e 3 0 ]
+"32
+[v _usb_string_descriptor usb_string_descriptor `*.33Cuc  1 e 3 0 ]
+"33
+[v _usb_num_string_descriptors usb_num_string_descriptors `i  1 e 2 0 ]
+"35
+[v _sof_handler sof_handler `*.37(v  1 e 2 0 ]
+"36
+[v _class_setup_handler class_setup_handler `*.37(v  1 e 2 0 ]
+[v _vendor_setup_handler vendor_setup_handler `*.37(v  1 e 2 0 ]
+[s S189 USB_EP_TYPE 4 `*.37(v 1 in_handler 2 0 `*.37(v 1 out_handler 2 2 ]
+"39
+[v _endpoints endpoints `[16]S189  1 e 64 0 ]
+"57
+[v _usb_bdt usb_bdt `[6]S41  1 e 24 0 ]
+"61
+[v _usb_ep0_out_buf usb_ep0_out_buf `[8]uc  1 e 8 0 ]
+"62
+[v _usb_ep0_in_buf usb_ep0_in_buf `[8]uc  1 e 8 0 ]
+"79
+[v _usb_device_status usb_device_status `ui  1 e 2 0 ]
+"80
+[v _usb_current_cfg usb_current_cfg `ui  1 e 2 0 ]
+"81
+[v _usb_device_state usb_device_state `VEuc  1 e 1 0 ]
+"82
+[v _usb_addr_pending usb_addr_pending `uc  1 e 1 0 ]
+"83
+[v _trn_status trn_status `uc  1 e 1 0 ]
+"84
+[v _EP0_Outbdp EP0_Outbdp `*.39S41  1 e 2 0 ]
+[v _EP0_Inbdp EP0_Inbdp `*.39S41  1 e 2 0 ]
+"85
+[v _IsSuspended IsSuspended `uc  1 e 1 0 ]
+"86
+[v _usb_rom_ptr usb_rom_ptr `*.33Cuc  1 e 3 0 ]
+"87
+[v _usb_rom_len usb_rom_len `ui  1 e 2 0 ]
+"88
+[v _usbrequesterrorflag usbrequesterrorflag `VEuc  1 e 1 0 ]
+"166 C:\Program Files (x86)\Microchip\xc8\v1.21\include\pic18f2550.h
+[v _UIR UIR `VEuc  1 e 1 @3944 ]
+[s S203 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"182
+[u S211 . 1 `S203 1 . 1 0 ]
+[v _UIRbits UIRbits `VES211  1 e 1 @3944 ]
+"276
+[v _UEIR UEIR `VEuc  1 e 1 @3946 ]
+"376
+[v _USTAT USTAT `VEuc  1 e 1 @3948 ]
+"451
+[v _UCONbits UCONbits `VES211  1 e 1 @3949 ]
+"485
+[v _UADDR UADDR `VEuc  1 e 1 @3950 ]
+"548
+[v _UCFG UCFG `VEuc  1 e 1 @3951 ]
+"629
+[v _UEP0 UEP0 `VEuc  1 e 1 @3952 ]
+"760
+[v _UEP1 UEP1 `VEuc  1 e 1 @3953 ]
+"891
+[v _UEP2 UEP2 `VEuc  1 e 1 @3954 ]
+[s S416 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2559
+[s S456 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S464 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S467 . 1 `S416 1 . 1 0 `S456 1 . 1 0 `S464 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES467  1 e 1 @3969 ]
+[s S407 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3635
+[u S425 . 1 `S407 1 . 1 0 `S416 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES425  1 e 1 @3987 ]
+"5093
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5104
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"5345
+[v _CVRCON CVRCON `VEuc  1 e 1 @4021 ]
+"6008
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"25 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\descriptors.h
+[v _cdc_device_descriptor cdc_device_descriptor `C[18]uc  1 e 18 0 ]
+"48
+[v _cdc_config_descriptor cdc_config_descriptor `C[67]uc  1 e 67 0 ]
+"128
+[v _cdc_str_descs cdc_str_descs `C[82]uc  1 e 82 0 ]
+"24 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\main.c
+[v _PA PA `uc  1 e 1 0 ]
+[v _PB PB `uc  1 e 1 0 ]
+[v _clkF clkF `uc  1 e 1 0 ]
+[v _DATA4 DATA4 `uc  1 e 1 0 ]
+[v _RS RS `uc  1 e 1 0 ]
+"31
+[v _main main `(v  1 e 0 0 ]
+{
+"32
+[v main@RecvdByte RecvdByte `uc  1 a 1 45 ]
+"86
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+{
+[v Delay10KTCYx@unit unit `uc  1 p 1 0 ]
+"13
+} 0
+"93 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\main.c
+[v _SetupBoard SetupBoard `(v  1 e 0 0 ]
+{
+"97
+} 0
+"521 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_register_sof_handler usb_register_sof_handler `(v  1 e 0 0 ]
+{
+[v usb_register_sof_handler@handler handler `*.37(v  1 p 2 0 ]
+"523
+} 0
+"109
+[v _usb_start usb_start `(v  1 e 0 0 ]
+{
+"114
+} 0
+"93
+[v _usb_init usb_init `(v  1 e 0 0 ]
+{
+[v usb_init@device_descriptor device_descriptor `*.25Cuc  1 p 2 6 ]
+[v usb_init@config_descriptor config_descriptor `*.25Cuc  1 p 2 8 ]
+[v usb_init@string_descriptor string_descriptor `*.25Cuc  1 p 2 10 ]
+[v usb_init@num_string_descriptors num_string_descriptors `i  1 p 2 12 ]
+"107
+} 0
+"419 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _peek_getc_cdc peek_getc_cdc `(uc  1 e 1 0 ]
+{
+[v peek_getc_cdc@c c `*.39uc  1 p 2 42 ]
+"433
+} 0
+"248
+[v _getOutReady getOutReady `(uc  1 e 1 0 ]
+{
+"251
+} 0
+"370
+[v _getc_cdc getc_cdc `(uc  1 e 1 0 ]
+{
+"371
+[v getc_cdc@c c `uc  1 a 1 43 ]
+"382
+} 0
+"260
+[v _getda_cdc getda_cdc `(uc  1 e 1 0 ]
+{
+"281
+} 0
+"184 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_handler usb_handler `(v  1 e 0 0 ]
+{
+"215
+} 0
+"217
+[v _usb_handle_transaction usb_handle_transaction `(v  1 e 0 0 ]
+{
+"238
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"10
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"42
+} 0
+"509 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_handle_in usb_handle_in `(v  1 e 0 0 ]
+{
+"513
+} 0
+"577
+[v _usb_send_rom usb_send_rom `(v  1 e 0 0 ]
+{
+"580
+[v usb_send_rom@packet_len packet_len `ui  1 a 2 13 ]
+"579
+[v usb_send_rom@i i `ui  1 a 2 11 ]
+"597
+} 0
+"226 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _cdc_set_line_coding_status cdc_set_line_coding_status `(v  1 e 0 0 ]
+{
+"228
+} 0
+"230
+[v _cdc_set_control_line_state_status cdc_set_control_line_state_status `(v  1 e 0 0 ]
+{
+"232
+} 0
+"191
+[v _cdc_get_line_coding cdc_get_line_coding `(v  1 e 0 0 ]
+{
+"193
+} 0
+"566 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_set_address usb_set_address `(v  1 e 0 0 ]
+{
+"575
+} 0
+"515
+[v _usb_handle_out usb_handle_out `(v  1 e 0 0 ]
+{
+"519
+} 0
+"195 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _cdc_set_line_coding_data cdc_set_line_coding_data `(v  1 e 0 0 ]
+{
+"196
+[v cdc_set_line_coding_data@dwBaud dwBaud `ul  1 a 4 22 ]
+[v cdc_set_line_coding_data@dwBaudrem dwBaudrem `ul  1 a 4 18 ]
+"224
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"10
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"10
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"240 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_handle_setup usb_handle_setup `(v  1 e 0 0 ]
+{
+"285
+} 0
+"439
+[v _usb_handle_StandardEndpointRequest usb_handle_StandardEndpointRequest `(v  1 e 0 0 ]
+{
+"440
+[v usb_handle_StandardEndpointRequest@packet packet `*.39uc  1 a 2 12 ]
+[s S41 BDENTRY 4 `uc 1 BDSTAT 1 0 `uc 1 BDCNT 1 1 `*.39uc 1 BDADDR 2 2 ]
+"443
+[v usb_handle_StandardEndpointRequest@epbd epbd `*.39S41  1 a 2 9 ]
+"444
+[v usb_handle_StandardEndpointRequest@pUEP pUEP `*.39uc  1 a 2 6 ]
+"442
+[v usb_handle_StandardEndpointRequest@dir dir `uc  1 a 1 11 ]
+"441
+[v usb_handle_StandardEndpointRequest@epnum epnum `uc  1 a 1 8 ]
+"439
+[v usb_handle_StandardEndpointRequest@bdp bdp `*.39S41  1 p 2 2 ]
+"507
+} 0
+"408
+[v _usb_handle_StandardInterfaceRequest usb_handle_StandardInterfaceRequest `(v  1 e 0 0 ]
+{
+"409
+[v usb_handle_StandardInterfaceRequest@packet packet `*.39uc  1 a 2 6 ]
+[s S41 BDENTRY 4 `uc 1 BDSTAT 1 0 `uc 1 BDCNT 1 1 `*.39uc 1 BDADDR 2 2 ]
+"408
+[v usb_handle_StandardInterfaceRequest@bdp bdp `*.39S41  1 p 2 2 ]
+"437
+} 0
+"287
+[v _usb_handle_StandardDeviceRequest usb_handle_StandardDeviceRequest `(v  1 e 0 0 ]
+{
+"288
+[v usb_handle_StandardDeviceRequest@packet packet `*.39uc  1 a 2 31 ]
+"289
+[v usb_handle_StandardDeviceRequest@i i `i  1 a 2 29 ]
+[s S41 BDENTRY 4 `uc 1 BDSTAT 1 0 `uc 1 BDCNT 1 1 `*.39uc 1 BDADDR 2 2 ]
+"287
+[v usb_handle_StandardDeviceRequest@bdp bdp `*.39S41  1 p 2 15 ]
+"406
+} 0
+"85 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _user_configured_init user_configured_init `(v  1 e 0 0 ]
+{
+"130
+} 0
+"132
+[v _cdc_setup cdc_setup `(v  1 e 0 0 ]
+{
+"133
+[v cdc_setup@packet packet `*.39uc  1 a 2 14 ]
+"134
+[v cdc_setup@reply_len reply_len `ui  1 a 2 12 ]
+"189
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"20
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"18
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"13
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"32
+} 0
+"552 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_RequestError usb_RequestError `(v  1 e 0 0 ]
+{
+"564
+} 0
+"547
+[v _usb_ack_dat1 usb_ack_dat1 `(v  1 e 0 0 ]
+{
+[v usb_ack_dat1@bdcnt bdcnt `i  1 p 2 0 ]
+"550
+} 0
+"537
+[v _usb_set_out_handler usb_set_out_handler `(v  1 e 0 0 ]
+{
+[v usb_set_out_handler@ep ep `i  1 p 2 0 ]
+[v usb_set_out_handler@out_handler out_handler `*.37(v  1 p 2 2 ]
+"539
+} 0
+"533
+[v _usb_set_in_handler usb_set_in_handler `(v  1 e 0 0 ]
+{
+[v usb_set_in_handler@ep ep `i  1 p 2 0 ]
+[v usb_set_in_handler@in_handler in_handler `*.37(v  1 p 2 2 ]
+"535
+} 0
+"100 C:\Users\h.angerer\Desktop\CDC_XC8\PIC18F2550BB_USB_BASE\main.c
+[v _USBSuspend USBSuspend `(v  1 e 0 0 ]
+{
+} 0
+"121 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_handle_reset usb_handle_reset `(v  1 e 0 0 ]
+{
+"131
+} 0
+"133
+[v _ClearUSBtoDefault ClearUSBtoDefault `(v  1 e 0 0 ]
+{
+"134
+[v ClearUSBtoDefault@i i `i  1 a 2 2 ]
+"182
+} 0
+"324 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/cdc.c
+[v _CDCFlushOnTimeout CDCFlushOnTimeout `(v  1 e 0 0 ]
+{
+"347
+} 0
+"254
+[v _getInReady getInReady `(uc  1 e 1 0 ]
+{
+"257
+} 0
+"236
+[v _WaitOutReady WaitOutReady `(v  1 e 0 0 ]
+{
+"238
+} 0
+"350
+[v _putc_cdc putc_cdc `(v  1 e 0 0 ]
+{
+[v putc_cdc@c c `uc  1 p 1 2 ]
+"363
+} 0
+"283
+[v _putda_cdc putda_cdc `(uc  1 e 1 0 ]
+{
+[v putda_cdc@count count `uc  1 p 1 0 ]
+"302
+} 0
+"68
+[v _initCDC initCDC `(v  1 e 0 0 ]
+{
+"83
+} 0
+"525 C:\Users\h.angerer\Desktop\CDC_XC8/dp_usb/usb_stack.c
+[v _usb_register_class_setup_handler usb_register_class_setup_handler `(v  1 e 0 0 ]
+{
+[v usb_register_class_setup_handler@handler handler `*.37(v  1 p 2 0 ]
+"527
+} 0
