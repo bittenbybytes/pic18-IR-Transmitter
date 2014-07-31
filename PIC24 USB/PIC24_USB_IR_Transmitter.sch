@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 31.07.2014 13:18:16
+EESchema Schematic File Version 2  date 31.07.2014 14:53:52
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date "31 jul 2014"
 Rev ""
@@ -382,78 +382,11 @@ Wire Wire Line
 	5400 5400 5550 5400
 Wire Wire Line
 	5400 5300 5550 5300
-Text GLabel 5150 5500 0    60   Input ~ 0
+Text GLabel 5350 1250 0    60   Input ~ 0
 ~MCLR~
-Wire Wire Line
-	5150 5500 5550 5500
-$Comp
-L CRYSTAL X1
-U 1 1 52D4526C
-P 8750 4900
-F 0 "X1" H 8750 5050 60  0000 C CNN
-F 1 "12Mhz" H 8750 4750 60  0000 C CNN
-F 2 "" H 8750 4900 60  0000 C CNN
-F 3 "" H 8750 4900 60  0000 C CNN
-	1    8750 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8050 5100 8550 5100
-Wire Wire Line
-	8550 5100 8550 4600
-Wire Wire Line
-	8550 4600 8800 4600
-Wire Wire Line
-	8050 5200 8800 5200
-$Comp
-L C C3
-U 1 1 52D45390
-P 9000 4600
-F 0 "C3" H 9000 4700 40  0000 L CNN
-F 1 "22p" H 9006 4515 40  0000 L CNN
-F 2 "" H 9038 4450 30  0000 C CNN
-F 3 "" H 9000 4600 60  0000 C CNN
-	1    9000 4600
-	0    -1   -1   0   
-$EndComp
-Connection ~ 8750 4600
-$Comp
-L C C4
-U 1 1 52D4546D
-P 9000 5200
-F 0 "C4" H 9000 5300 40  0000 L CNN
-F 1 "22p" H 9006 5115 40  0000 L CNN
-F 2 "" H 9038 5050 30  0000 C CNN
-F 3 "" H 9000 5200 60  0000 C CNN
-	1    9000 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR014
-U 1 1 52D45473
-P 9350 4900
-F 0 "#PWR014" H 9350 4900 30  0001 C CNN
-F 1 "GND" H 9350 4830 30  0001 C CNN
-F 2 "" H 9350 4900 60  0000 C CNN
-F 3 "" H 9350 4900 60  0000 C CNN
-	1    9350 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 8750 5200
-Wire Wire Line
-	9200 4600 9250 4600
-Wire Wire Line
-	9250 4600 9250 5200
-Wire Wire Line
-	9250 5200 9200 5200
-Wire Wire Line
-	9250 4850 9350 4850
-Wire Wire Line
-	9350 4850 9350 4900
-Connection ~ 9250 4850
-Text GLabel 8150 4600 2    60   Input ~ 0
+Text GLabel 7150 4300 2    60   Input ~ 0
 P1A
-Text GLabel 8150 4700 2    60   Output ~ 0
+Text GLabel 7150 4400 2    60   Output ~ 0
 IR_LED
 Text GLabel 8200 2000 0    60   Input ~ 0
 IR_LED
@@ -931,15 +864,11 @@ AN2
 Text Label 5100 6850 0    60   ~ 0
 AN3
 Wire Wire Line
-	8050 4600 8150 4600
+	7050 4300 7150 4300
 Wire Wire Line
-	8050 4700 8150 4700
+	7050 4400 7150 4400
 NoConn ~ 2000 3300
 NoConn ~ 1800 5950
-Text Label 8250 5100 0    60   ~ 0
-OSC2
-Text Label 8250 5200 0    60   ~ 0
-OSC1
 Text Label 4800 5100 0    60   ~ 0
 USER_LED
 $Comp
@@ -1023,4 +952,20 @@ Wire Wire Line
 	3600 4900 4100 4900
 Wire Wire Line
 	8450 3200 8150 3200
+$Sheet
+S 5550 1000 2000 2600
+U 53DA26B9
+F0 "MCUSection" 50
+F1 "MCU.sch" 50
+F2 "~MCLR" I L 5550 1250 60 
+F3 "SCL" B L 5550 1900 60 
+F4 "SDA" B L 5550 2000 60 
+F5 "PORTE" B L 5550 2150 60 
+$EndSheet
+Wire Wire Line
+	5550 1250 5350 1250
+Wire Bus Line
+	5550 2150 5250 2150
+Entry Wire Line
+	5350 2150 5450 2250
 $EndSCHEMATC

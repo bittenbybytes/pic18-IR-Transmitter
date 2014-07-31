@@ -1,73 +1,73 @@
-Cmp-Mod V01 Created by CvPcb (2014-03-19 BZR 4756)-product date = Die 29 Jul 2014 23:26:40 CEST
+Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 31.07.2014 13:37:14
 
 BeginCmp
 TimeStamp = /52D43BC9;
 Reference = C1;
 ValeurCmp = 47uF;
-IdModule  = ;
+IdModule  = c_tant_B;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D44076;
 Reference = C2;
 ValeurCmp = 100n;
-IdModule  = ;
+IdModule  = c_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D45390;
 Reference = C3;
 ValeurCmp = 22p;
-IdModule  = ;
+IdModule  = c_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D4546D;
 Reference = C4;
 ValeurCmp = 22p;
-IdModule  = ;
+IdModule  = c_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D44DE2;
 Reference = C5;
 ValeurCmp = 100n;
-IdModule  = ;
+IdModule  = c_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D44088;
 Reference = C6;
 ValeurCmp = 100n;
-IdModule  = ;
+IdModule  = c_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D43B15;
 Reference = CON1;
 ValeurCmp = USB-MINI-B;
-IdModule  = ;
+IdModule  = USB_MINI_B;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D45EB7;
 Reference = D1;
 ValeurCmp = POWER_LED;
-IdModule  = ;
+IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D45E2B;
 Reference = D2;
 ValeurCmp = USER_LED;
-IdModule  = ;
+IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D45985;
 Reference = D3;
 ValeurCmp = IR_LED;
-IdModule  = ;
+IdModule  = LED-3MM;
 EndCmp
 
 BeginCmp
@@ -130,56 +130,56 @@ BeginCmp
 TimeStamp = /52D45EB1;
 Reference = R1;
 ValeurCmp = 330R;
-IdModule  = ;
+IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D44FCF;
 Reference = R2;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D45E25;
 Reference = R3;
 ValeurCmp = 330R;
-IdModule  = ;
+IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D4596A;
 Reference = R4;
 ValeurCmp = 100R;
-IdModule  = ;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D469B5;
 Reference = R5;
 ValeurCmp = 4k7;
-IdModule  = ;
+IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D46B46;
 Reference = R6;
 ValeurCmp = 4k7;
-IdModule  = ;
+IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D4664F;
+TimeStamp = /53DA26B9/53DA2811;
 Reference = U1;
-ValeurCmp = 1586-PIC18F4550-I/PT;
-IdModule  = axylf:;
+ValeurCmp = PIC24FJXXXGB106;
+IdModule  = TQFP_64;
 EndCmp
 
 BeginCmp
 TimeStamp = /52D4526C;
 Reference = X1;
 ValeurCmp = 12Mhz;
-IdModule  = ;
+IdModule  = Q_49U3HMS;
 EndCmp
 
 EndListe

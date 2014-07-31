@@ -1,13 +1,8 @@
-update=30.07.2014 10:50:48
+update=31.07.2014 13:33:23
 version=1
-last_client=eeschema
+last_client=cvpcb
 [general]
 version=1
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -29,7 +24,28 @@ DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
 [pcbnew/libraries]
-LibDir=
+LibName1=midas_lcd
+LibName2=capacitors
+LibName3=connect
+LibName4=connectors_molex_serial_53047-A123
+LibName5=dip_sockets
+LibName6=discret
+LibName7=display
+LibName8=divers
+LibName9=inductors
+LibName10=led
+LibName11=libcms
+LibName12=muonde
+LibName13=pga_sockets
+LibName14=pin_array
+LibName15=powerint
+LibName16=smd_capacitors
+LibName17=smd_dil
+LibName18=smd_resistors
+LibName19=smd_transistors
+LibName20=sockets
+LibName21=valves
+LibDir=../PIC24 USB
 [eeschema]
 version=1
 LibDir=../Apps/CircuitHub/parts/kicad;../PIC24 USB
@@ -71,3 +87,8 @@ LibName29=contrib
 LibName30=valves
 LibName31=CircuitHub
 LibName32=microchip_hele
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
