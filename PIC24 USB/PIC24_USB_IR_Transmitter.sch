@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 18.01.2014 12:00:07
+EESchema Schematic File Version 2  date 31.07.2014 13:18:16
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,14 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:CircuitHub
-LIBS:pic18_USB_IR_Transmitter-cache
+LIBS:microchip_hele
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "18 jan 2014"
+Date "31 jul 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -305,10 +305,6 @@ F 3 "" H 9600 5000 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	9600 4950 9600 5000
-NoConn ~ 8050 4800
-NoConn ~ 8050 4900
-NoConn ~ 5550 4900
-NoConn ~ 5550 5000
 Text GLabel 2150 5450 2    60   Output ~ 0
 ~MCLR~
 Wire Wire Line
@@ -756,17 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 5900 5550 5900
 Wire Wire Line
-	8050 3800 8150 3800
-Wire Wire Line
-	8150 3800 8150 3300
-Wire Wire Line
 	8150 3300 8450 3300
-Wire Wire Line
-	5550 3800 5500 3800
-Wire Wire Line
-	5500 3800 5500 3200
-Wire Wire Line
-	5500 3200 8450 3200
 Wire Wire Line
 	8450 3400 8350 3400
 Wire Wire Line
@@ -878,18 +864,6 @@ Wire Wire Line
 	5450 4100 5550 4100
 Wire Wire Line
 	5450 4000 5550 4000
-NoConn ~ 5550 3900
-NoConn ~ 5550 4800
-NoConn ~ 8050 4100
-NoConn ~ 8050 4200
-NoConn ~ 8050 4300
-NoConn ~ 8050 4400
-NoConn ~ 8050 5000
-NoConn ~ 8050 5500
-NoConn ~ 8050 5700
-NoConn ~ 8050 5600
-NoConn ~ 8050 5800
-NoConn ~ 8050 5900
 $Comp
 L +5V #PWR028
 U 1 1 52D469A9
@@ -944,22 +918,6 @@ Wire Wire Line
 	3950 4250 3950 4200
 Wire Wire Line
 	3800 4250 3800 4200
-NoConn ~ 5550 5200
-$Comp
-L 1586-PIC18F4550-I/PT U1
-U 1 1 52D4664F
-P 5750 3700
-F 0 "U1" H 5750 3730 60  0000 L CNN
-F 1 "1586-PIC18F4550-I/PT" H 5750 1370 60  0000 L CNN
-F 2 "bittenbybytes/axylf" H 5750 4000 60  0001 L CNN
-F 3 "https://circuithub.com/parts/MICROCHIP/PIC18F4550-I%2FPT/documents" H 5750 4100 60  0001 L CNN
-F 4 "1586" H 5750 4200 60  0001 L CNN "CircuitHubID"
-F 5 "bittenbybytes/dlggy" H 5750 4300 60  0001 L CNN "symbolURN"
-F 6 "6fcab3e7681bbab4137038658c0f0c25a00fc3ae" H 5750 4400 60  0001 L CNN "symbolRevision"
-F 7 "cbd665ea3e7566542faf2266d4c1fac7b0158e08" H 5750 4500 60  0001 L CNN "footprintRevision"
-	1    5750 3700
-	1    0    0    -1  
-$EndComp
 Text Label 8200 3200 0    60   ~ 0
 RX
 Text Label 8200 3300 0    60   ~ 0
@@ -1063,4 +1021,6 @@ Wire Wire Line
 	3600 4800 4100 4800
 Wire Wire Line
 	3600 4900 4100 4900
+Wire Wire Line
+	8450 3200 8150 3200
 $EndSCHEMATC
