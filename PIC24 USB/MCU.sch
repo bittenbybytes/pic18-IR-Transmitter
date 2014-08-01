@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 31.07.2014 14:53:53
+EESchema Schematic File Version 2  date 01.08.2014 22:56:17
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,13 +31,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:CircuitHub
 LIBS:microchip_hele
+LIBS:PIC24_USB_IR_Transmitter-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title ""
-Date "31 jul 2014"
+Date "1 aug 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -356,7 +357,7 @@ Entry Wire Line
 Entry Wire Line
 	9950 5000 10050 5100
 Wire Bus Line
-	10050 5500 10050 1700
+	10050 1700 10050 5500
 Entry Wire Line
 	2550 2200 2650 2300
 Entry Wire Line
@@ -397,4 +398,51 @@ Text Label 7550 5300 2    60   ~ 0
 RE3
 Text Label 7550 5400 2    60   ~ 0
 RE4
+$Comp
+L +3,3V #PWR?
+U 1 1 53DBFFDE
+P 8550 4550
+F 0 "#PWR?" H 8550 4510 30  0001 C CNN
+F 1 "+3,3V" H 8550 4660 30  0000 C CNN
+F 2 "" H 8550 4550 60  0000 C CNN
+F 3 "" H 8550 4550 60  0000 C CNN
+	1    8550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4700 8550 4700
+Wire Wire Line
+	8550 4700 8550 4550
+Wire Wire Line
+	7300 4600 8150 4600
+Wire Wire Line
+	8150 4400 8350 4400
+$Comp
+L C 10u
+U 1 1 53DC00CE
+P 8350 4700
+F 0 "10u (ESR < 5R)" H 8350 4800 40  0000 L CNN
+F 1 "C" H 8356 4615 40  0000 L CNN
+F 2 "~" H 8388 4550 30  0000 C CNN
+F 3 "~" H 8350 4700 60  0000 C CNN
+	1    8350 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 4400 8350 4500
+$Comp
+L GND #PWR?
+U 1 1 53DC0153
+P 8350 4950
+F 0 "#PWR?" H 8350 4950 30  0001 C CNN
+F 1 "GND" H 8350 4880 30  0001 C CNN
+F 2 "" H 8350 4950 60  0000 C CNN
+F 3 "" H 8350 4950 60  0000 C CNN
+	1    8350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4900 8350 4950
+Wire Wire Line
+	8150 4600 8150 4400
 $EndSCHEMATC

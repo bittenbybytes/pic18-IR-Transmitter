@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 31.07.2014 14:53:52
+EESchema Schematic File Version 2  date 01.08.2014 22:56:17
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,13 +31,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:CircuitHub
 LIBS:microchip_hele
+LIBS:PIC24_USB_IR_Transmitter-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title ""
-Date "31 jul 2014"
+Date "1 aug 2014"
 Rev ""
 Comp ""
 Comment1 ""

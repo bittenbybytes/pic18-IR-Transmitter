@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 31.07.2014 14:07:57
+EESchema Schematic File Version 2  date 01.08.2014 22:56:11
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,13 +31,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:CircuitHub
 LIBS:microchip_hele
+LIBS:PIC24_USB_IR_Transmitter-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title ""
-Date "31 jul 2014"
+Date "1 aug 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -355,18 +356,8 @@ Entry Wire Line
 	9950 5100 10050 5200
 Entry Wire Line
 	9950 5000 10050 5100
-Wire Wire Line
-	7300 5000 9950 5000
-Wire Wire Line
-	7300 5100 9950 5100
-Wire Wire Line
-	7300 5200 9950 5200
-Wire Wire Line
-	7300 5300 9950 5300
-Wire Wire Line
-	7300 5400 9950 5400
 Wire Bus Line
-	10050 5500 10050 1700
+	10050 1700 10050 5500
 Entry Wire Line
 	2550 2200 2650 2300
 Entry Wire Line
@@ -379,16 +370,6 @@ Wire Wire Line
 	2650 2400 3450 2400
 Wire Wire Line
 	2650 2500 3450 2500
-Text Label 8150 5000 2    60   ~ 0
-RE0
-Text Label 8150 5100 2    60   ~ 0
-RE1
-Text Label 8150 5200 2    60   ~ 0
-RE2
-Text Label 8150 5300 2    60   ~ 0
-RE3
-Text Label 8150 5400 2    60   ~ 0
-RE4
 Text Label 3200 2300 2    60   ~ 0
 RE5
 Text Label 3200 2400 2    60   ~ 0
@@ -397,4 +378,71 @@ Text Label 3200 2500 2    60   ~ 0
 RE7
 Text HLabel 10150 1700 2    60   BiDi ~ 0
 PORTE
+Wire Wire Line
+	7300 5000 9950 5000
+Wire Wire Line
+	7300 5100 7850 5100
+Wire Wire Line
+	7300 5200 7850 5200
+Wire Wire Line
+	7300 5300 7850 5300
+Wire Wire Line
+	7300 5400 7850 5400
+Text Label 7550 5000 2    60   ~ 0
+RE0
+Text Label 7550 5100 2    60   ~ 0
+RE1
+Text Label 7550 5200 2    60   ~ 0
+RE2
+Text Label 7550 5300 2    60   ~ 0
+RE3
+Text Label 7550 5400 2    60   ~ 0
+RE4
+$Comp
+L +3,3V #PWR?
+U 1 1 53DBFFDE
+P 8550 4550
+F 0 "#PWR?" H 8550 4510 30  0001 C CNN
+F 1 "+3,3V" H 8550 4660 30  0000 C CNN
+F 2 "" H 8550 4550 60  0000 C CNN
+F 3 "" H 8550 4550 60  0000 C CNN
+	1    8550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4700 8550 4700
+Wire Wire Line
+	8550 4700 8550 4550
+Wire Wire Line
+	7300 4600 8150 4600
+Wire Wire Line
+	8150 4400 8350 4400
+$Comp
+L C 10u
+U 1 1 53DC00CE
+P 8350 4700
+F 0 "10u (ESR < 5R)" H 8350 4800 40  0000 L CNN
+F 1 "C" H 8356 4615 40  0000 L CNN
+F 2 "~" H 8388 4550 30  0000 C CNN
+F 3 "~" H 8350 4700 60  0000 C CNN
+	1    8350 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 4400 8350 4500
+$Comp
+L GND #PWR?
+U 1 1 53DC0153
+P 8350 4950
+F 0 "#PWR?" H 8350 4950 30  0001 C CNN
+F 1 "GND" H 8350 4880 30  0001 C CNN
+F 2 "" H 8350 4950 60  0000 C CNN
+F 3 "" H 8350 4950 60  0000 C CNN
+	1    8350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4900 8350 4950
+Wire Wire Line
+	8150 4600 8150 4400
 $EndSCHEMATC
