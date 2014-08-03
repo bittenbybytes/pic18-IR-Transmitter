@@ -1,18 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 01.08.2014 23:15:10
-
-BeginCmp
-TimeStamp = /53DC0A22;
-Reference = 10u1;
-ValeurCmp = C;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /53DA26B9/53DC00CE;
-Reference = 10u2;
-ValeurCmp = C;
-IdModule  = SM1206;
-EndCmp
+Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 03.08.2014 21:20:56
 
 BeginCmp
 TimeStamp = /52D43BC9;
@@ -73,15 +59,36 @@ EndCmp
 BeginCmp
 TimeStamp = /53DA26B9/53DA330C;
 Reference = C9;
-ValeurCmp = C;
+ValeurCmp = 22p;
 IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
 TimeStamp = /53DA26B9/53DA3319;
 Reference = C10;
-ValeurCmp = C;
+ValeurCmp = 22p;
 IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53DEB257;
+Reference = C11;
+ValeurCmp = 100n;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53DC00CE;
+Reference = C12;
+ValeurCmp = 10u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DC0A22;
+Reference = C13;
+ValeurCmp = 10u;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
@@ -158,7 +165,14 @@ BeginCmp
 TimeStamp = /52D8FEBD;
 Reference = P7;
 ValeurCmp = CONN_8;
-IdModule  = pin_array_4x2;
+IdModule  = pin_array_8_50mil;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DEA70D;
+Reference = P8;
+ValeurCmp = CONN_8X2;
+IdModule  = pin_array_12x2;
 EndCmp
 
 BeginCmp
@@ -176,7 +190,7 @@ IdModule  = SM0603_Resistor;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D44FCF;
+TimeStamp = /53DA26B9/53DEB251;
 Reference = R2;
 ValeurCmp = 10k;
 IdModule  = SM0603_Resistor;
@@ -207,6 +221,13 @@ BeginCmp
 TimeStamp = /52D46B46;
 Reference = R6;
 ValeurCmp = 4k7;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53DEB244;
+Reference = R7;
+ValeurCmp = 100R;
 IdModule  = SM0603_Resistor;
 EndCmp
 
