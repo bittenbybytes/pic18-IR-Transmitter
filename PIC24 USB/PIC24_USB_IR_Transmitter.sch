@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:CircuitHub
 LIBS:microchip_hele
+LIBS:led_hele
 LIBS:PIC24_USB_IR_Transmitter-cache
 EELAYER 24 0
 EELAYER END

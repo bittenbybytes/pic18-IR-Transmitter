@@ -1,6 +1,6 @@
-update=31.07.2014 13:33:23
+update=12.08.2014 12:30:45
 version=1
-last_client=cvpcb
+last_client=kicad
 [general]
 version=1
 [pcbnew]
@@ -46,10 +46,20 @@ LibName19=smd_transistors
 LibName20=sockets
 LibName21=valves
 LibDir=../PIC24 USB
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
+PageLayoutDescrFile=
+SubpartIdSeparator=0
+SubpartFirstId=65
 LibDir=../Apps/CircuitHub/parts/kicad;../PIC24 USB
 NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
@@ -87,8 +97,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=CircuitHub
 LibName32=microchip_hele
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName33=led_hele
