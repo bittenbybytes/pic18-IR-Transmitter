@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 12.08.2014 16:06:12
+Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 13.08.2014 12:49:02
 
 BeginCmp
 TimeStamp = /52D43BC9;
@@ -29,9 +29,16 @@ IdModule  = SMD_Packages:SMD-0603_c;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D44DE2;
+TimeStamp = /53DA26B9/53F4D6C5;
 Reference = C5;
-ValeurCmp = 100n;
+ValeurCmp = ?;
+IdModule  = SMD_Packages:SMD-0603_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53F4D77C;
+Reference = C6;
+ValeurCmp = ?;
 IdModule  = SMD_Packages:SMD-0603_c;
 EndCmp
 
@@ -85,7 +92,7 @@ IdModule  = Capacitors_SMD:c_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D43B15;
+TimeStamp = /53ED0E9A;
 Reference = CON1;
 ValeurCmp = USB-MINI-B;
 IdModule  = Connect:USB_MINI_B;
@@ -94,7 +101,7 @@ EndCmp
 BeginCmp
 TimeStamp = /52D45EB7;
 Reference = D1;
-ValeurCmp = POWER_LED;
+ValeurCmp = LED_POWER;
 IdModule  = LEDs:LED-0603;
 EndCmp
 
@@ -148,10 +155,10 @@ IdModule  = Pin_Headers:Pin_Header_Straight_1x04;
 EndCmp
 
 BeginCmp
-TimeStamp = /52D65590;
+TimeStamp = /53EB4765;
 Reference = P6;
 ValeurCmp = CONN_1;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+IdModule  = Symbols:Symbol_OSHW-Logo_CopperTop;
 EndCmp
 
 BeginCmp
@@ -316,6 +323,20 @@ IdModule  = SMD_Packages:SMD-0603_r;
 EndCmp
 
 BeginCmp
+TimeStamp = /53EF297E;
+Reference = R14;
+ValeurCmp = 0R;
+IdModule  = SMD_Packages:SMD-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53EB0F03;
+Reference = R15;
+ValeurCmp = 100K;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
 TimeStamp = /53DA26B9/53DA2811;
 Reference = U1;
 ValeurCmp = PIC24FJXXXGB106;
@@ -348,6 +369,13 @@ TimeStamp = /53DA26B9/53DA32F3;
 Reference = X1;
 ValeurCmp = CRYSTAL_12MHZ;
 IdModule  = Crystals_Oscillators_SMD:Q_49U3HMS;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DA26B9/53F4D63C;
+Reference = X2;
+ValeurCmp = 32khz;
+IdModule  = Crystals:Crystal_Round_Horizontal_3mm_BigPad;
 EndCmp
 
 EndListe
