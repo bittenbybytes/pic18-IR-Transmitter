@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 13.08.2014 12:49:02
+Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 13.08.2014 16:59:31
 
 BeginCmp
 TimeStamp = /52D43BC9;
@@ -92,6 +92,13 @@ IdModule  = Capacitors_SMD:c_1206;
 EndCmp
 
 BeginCmp
+TimeStamp = /53ECF8B3;
+Reference = C14;
+ValeurCmp = 100n;
+IdModule  = SMD_Packages:SMD-0603_c;
+EndCmp
+
+BeginCmp
 TimeStamp = /53ED0E9A;
 Reference = CON1;
 ValeurCmp = USB-MINI-B;
@@ -158,7 +165,7 @@ BeginCmp
 TimeStamp = /53EB4765;
 Reference = P6;
 ValeurCmp = CONN_1;
-IdModule  = Symbols:Symbol_OSHW-Logo_CopperTop;
+IdModule  = Symbols:Symbol_OSHW-Logo_SilkScreen;
 EndCmp
 
 BeginCmp
@@ -185,49 +192,49 @@ EndCmp
 BeginCmp
 TimeStamp = /53E9F776/53E9FB34;
 Reference = Q2;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FBBA;
 Reference = Q3;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FB8D;
 Reference = Q4;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FD96;
 Reference = Q5;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FDA2;
 Reference = Q6;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FD9C;
 Reference = Q7;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /53E9F776/53E9FDB6;
 Reference = Q8;
-ValeurCmp = MOSFET_N;
+ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
 
@@ -362,6 +369,13 @@ TimeStamp = /53EAE6EA;
 Reference = U4;
 ValeurCmp = MCP48X2;
 IdModule  = SMD_Packages:MSOP-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EC8FC0;
+Reference = U5;
+ValeurCmp = MCP9700;
+IdModule  = Discret:TO92-123;
 EndCmp
 
 BeginCmp
