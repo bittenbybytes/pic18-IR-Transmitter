@@ -17,6 +17,12 @@ void InitMatrixDisplay();
 
 inline void MatrixDisplayMultiplexingTask();
 
+// display a 2 digit (5 by 3 pixel) decimal number on a single 5x7 display
+void Display2Digit5x3Num(uint8_t num);
+
+// display a 2 digit (5 by 3 pixel) hexadecimal number on a single 5x7 display
+void Display2Digit5x3Hex(uint8_t num);
+
 #define LED_MATRIX_NUM_OF_ROWS 7
 
 extern volatile uint8_t display[LED_MATRIX_NUM_OF_ROWS];

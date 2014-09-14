@@ -37,7 +37,6 @@ void InitMatrixDisplay()
 	MATRIXTRIS = 0xf000; // set D0 .. D11 to output (D0..6 connected to row, D7..11 to column)
 	
 	// setup timer 1 and interrupt
-	
 	T1CONbits.TGATE = 0; // select clock source
 
 	T1CONbits.TCKPS0 = 0; // prescaler
@@ -65,4 +64,97 @@ inline void MatrixDisplayMultiplexingTask()
 	// proceed to the next row or go back to the first one in the next call
 	if (++row >= LED_MATRIX_NUM_OF_ROWS)
 		row = 0;
+}
+
+// character set for 4x3 pixel numbers
+static uint8_t charset4x3[][3] = {
+	{ // zero
+		0b00011111,
+		0b00010001,
+		0b00011111
+	},{ // one
+		0b00000000,
+		0b00000010,
+		0b00011111
+	},{ // two
+		0b00011101,
+		0b00010101,
+		0b00010111
+	},{	 // three
+		0b00010001,
+		0b00010101,
+		0b00011111
+	},{	 // four
+		0b00000111,
+		0b00000100,
+		0b00011111
+	},{	 // five
+		0b00010111,
+		0b00010101,
+		0b00011101
+	},{	 // six
+		0b00011111,
+		0b00010101,
+		0b00011101
+	},{	 // seven
+		0b00000001,
+		0b00011101,
+		0b00000011
+	},{	 // eight
+		0b00011111,
+		0b00010101,
+		0b00011111
+	},{	 // nine
+		0b00010111,
+		0b00010101,
+		0b00011111
+	},{	 // A
+		0b00011111,
+		0b00000101,
+		0b00011111
+	},{	 // B
+		0b00011111,
+		0b00010100,
+		0b00011100
+	},{	 // C
+		0b00011111,
+		0b00010001,
+		0b00010001
+	},{	 // D
+		0b00011100,
+		0b00010100,
+		0b00011111
+	},{	 // E
+		0b00011111,
+		0b00010101,
+		0b00010001
+	},{	 // F
+		0b00011111,
+		0b00000101,
+		0b00000001
+	}
+};
+
+void Display2Digit5x3Num(uint8_t num)
+{
+	// clamp to 99 (overflow protection)
+	if (num > 99)
+		num = 99;
+
+	int row;
+	for (row = 0; row < 3; row++)
+	{
+		display[row+4] = charset4x3[(num/10)][2 - row];
+		display[row] = charset4x3[(num % 10)][2 - row];
+	}
+}
+
+void Display2Digit5x3Hex(uint8_t num)
+{
+	int row;
+	for (row = 0; row < 3; row++)
+	{
+		display[row+4] = charset4x3[(num>>4)][2 - row];
+		display[row] = charset4x3[(num & 0x0f)][2 - row];
+	}
 }
