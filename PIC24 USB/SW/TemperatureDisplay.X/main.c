@@ -46,15 +46,15 @@ int16_t main(void)
     CLKDIVbits.RCDIV0=0;     //clock divider to 0
     AD1PCFG = 0xFFFF;        // Default all pins to digital
     OSCCONbits.SOSCEN=0;     //Disables the secondary oscilator
-	
-	// fill display with a pattern
-	uint32_t i;
-	for (i = 0; i < LED_MATRIX_NUM_OF_ROWS; i++)
-	{
-		display[i] = 1 << (i%5);
-	}
 
-	for (i = 0; i < 0xffff; i++);
+    // fill display with a pattern
+    uint32_t i;
+    for (i = 0; i < LED_MATRIX_NUM_OF_ROWS; i++)
+    {
+            display[i] = 1 << (i%5);
+    }
+
+    for (i = 0; i < 0xffff; i++);
 
    AD1PCFGLbits.PCFG11 = 0;  //Disable digital input on AN11
 
@@ -67,23 +67,24 @@ int16_t main(void)
 
    AD1CON1bits.ADON =1;           // turn ADC on
 
-	// clear display
-	for (i = 0; i < LED_MATRIX_NUM_OF_ROWS; i++)
-	{
-		display[i] = 0;
-	}
+    // clear display
+    for (i = 0; i < LED_MATRIX_NUM_OF_ROWS; i++)
+    {
+        display[i] = 0;
+    }
 
-	uint8_t num = 0;
+    uint8_t num = 0;
+
     while(1)
     {
-		AD1CON1bits.DONE=0;         //resets DONE bit
+        AD1CON1bits.DONE=0;         //resets DONE bit
         AD1CON1bits.SAMP=1;         //start sample
-		while(!AD1CON1bits.DONE);
-		uint16_t result = ADC1BUF0;
-		uint16_t voltage = ((uint32_t)(result) * 3300) / 1023;
-		uint8_t temp = (((voltage - 500) / 5) + 1) / 2;
-		Display2Digit5x3Num(temp);
-		//Display2Digit5x3Num(num++);
-		for (i = 0; i < 0xffff; i++);
+        while(!AD1CON1bits.DONE);
+        uint16_t result = ADC1BUF0;
+        uint16_t voltage = ((uint32_t)(result) * 3300) / 1023;
+        uint8_t temp = (((voltage - 500) / 5) + 1) / 2;
+        Display2Digit5x3Num(temp);
+        //Display2Digit5x3Num(num++);
+        for (i = 0; i < 0xffff; i++);
     }
 }
