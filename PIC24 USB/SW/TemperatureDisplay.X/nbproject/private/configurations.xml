@@ -23,7 +23,7 @@
     </conf>
     <conf name="C30_24FJ256GA110" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -59,7 +59,7 @@
     </conf>
     <conf name="C30_24F04KA200" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -95,7 +95,7 @@
     </conf>
     <conf name="C30_24FJ64GC010" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -131,7 +131,7 @@
     </conf>
     <conf name="C30_24FJ256DA210" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -167,7 +167,7 @@
     </conf>
     <conf name="C30_24EP128GP202" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -203,7 +203,7 @@
     </conf>
     <conf name="C30_24HJ128GP202" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -239,7 +239,7 @@
     </conf>
     <conf name="C30_24EP512GU814" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>/Applications/microchip/mplabc30/v3.31/bin</languageToolchainDir>
+      <languageToolchainDir>/opt/microchip/mplabc30/v3.24/bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
