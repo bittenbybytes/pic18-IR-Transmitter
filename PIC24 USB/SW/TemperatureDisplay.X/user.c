@@ -30,7 +30,7 @@
 /* User Functions                                                             */
 /******************************************************************************/
 void spi1Init(unsigned int prescale){
-    OpenSPI1(0x0120 | prescale, 0x0000, 0x8000);
+    OpenSPI1(0x0520 | prescale, 0x0000, 0x8000);
 }
 /* <Initialize variables in user.h and insert code for user algorithms.> */
 

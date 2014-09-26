@@ -26,6 +26,9 @@ extern "C" {
 				unsigned char loByte;
 				unsigned char hiByte;
 			};
+			struct{
+				unsigned short raw;
+			};
 		};
 	}DacCommand;
 
