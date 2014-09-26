@@ -22,12 +22,17 @@
 #include "user.h"          /* User funct/params, such as InitApp              */
 
 #include "LedMatrixDisplay.h"
+#include <spi.h>
+
+#include "mcp_spi_dac.h"
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
 
 /* i.e. uint16_t <variable_name>; */
+
+unsigned char spi1Write( unsigned char i );
 
 /******************************************************************************/
 /* Main Program                                                               */
@@ -73,10 +78,33 @@ int16_t main(void)
         display[i] = 0;
     }
 
-    uint8_t num = 0;
+    volatile uint16_t num = 0;
 
     while(1)
     {
+		DacCommand cmd;
+		cmd.noOutputGain = true;
+		cmd.notA_B = false;
+		cmd.notShutdown = true;
+		cmd.data = num & 0xFFF;
+		if (num < 0xFFF)
+			num++;
+		else
+			num = 0;
+
+		PORTFbits.RF3 = 0;
+		spi1Write(cmd.hiByte);
+		spi1Write(cmd.loByte);
+		PORTFbits.RF3 = 1;
+
+		cmd.notA_B = false;
+		cmd.data = 0x7ff - cmd.data;
+
+		PORTFbits.RF3 = 0;
+		spi1Write(cmd.hiByte);
+		spi1Write(cmd.loByte);
+		PORTFbits.RF3 = 1;
+
         AD1CON1bits.DONE=0;         //resets DONE bit
         AD1CON1bits.SAMP=1;         //start sample
         while(!AD1CON1bits.DONE);
@@ -85,6 +113,17 @@ int16_t main(void)
         uint8_t temp = (((voltage - 500) / 5) + 1) / 2;
         Display2Digit5x3Num(temp);
         //Display2Digit5x3Num(num++);
-        for (i = 0; i < 0xffff; i++);
+        for (i = 0; i < 0xff; i++);
     }
 }
+
+
+
+// send one byte of data and receive one back at the same time
+unsigned char spi1Write( unsigned char i )
+{
+    // write to buffer for TX, wait for transfer, read
+    SPI1BUF = i;
+    while(!SPI1STATbits.SPIRBF);
+    return SPI1BUF;
+}//spiWrite2
