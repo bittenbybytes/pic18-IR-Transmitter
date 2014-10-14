@@ -26,6 +26,8 @@
 
 #include "mcp_spi_dac.h"
 
+#include "char_lcd_hd44780.h"
+
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
@@ -66,6 +68,8 @@ int16_t main(void)
 
 	volatile uint16_t num = 0;
 
+	lcdPrint("Start");
+	
 	while(1)
 	{
 		DacCommand cmd;
@@ -100,8 +104,16 @@ int16_t main(void)
 		uint16_t voltage = ((uint32_t)(result) * 3300) / 1023;
 		uint8_t temp = (((voltage - 500) / 5) + 1) / 2;
 		Display2Digit5x3Num(temp);
+		
+		//lcdClear();
+		lcdResetCursorPosition();
+		
+		char tmpStr[] = {'T','e','m','p',' ', 0x30+((temp/10)%10), 0x30+temp%10,
+		' ', ' ', /*0x30+(num/10000)%10, 0x30+(num/1000)%10,*/ 0x30+(num/100)%10, 0x30+(num/10)%10, 0x30+num%10, '\0'};
+		lcdPrint(tmpStr);
 		//Display2Digit5x3Num(num++);
-		//for (i = 0; i < 0xff; i++);
+		volatile uint16_t i = 0;
+		for (i = 0; i < 0xffff; i++);
 	}
 }
 
