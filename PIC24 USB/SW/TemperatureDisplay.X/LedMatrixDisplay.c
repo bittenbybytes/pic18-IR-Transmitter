@@ -132,20 +132,38 @@ static uint8_t charset4x3[][3] = {
 		0b00011111,
 		0b00000101,
 		0b00000001
+	},{	 // - (minus sign)
+		0b00000100,
+		0b00000100,
+		0b00000100
 	}
 };
 
-void Display2Digit5x3Num(uint8_t num)
+static const uint8_t minus_sign = 16;
+
+void Display2Digit5x3Num(int8_t num)
 {
 	// clamp to 99 (overflow protection)
 	if (num > 99)
 		num = 99;
+	
+	// clamp to -9 (underflow protection)
+	if(num < -9)
+		num = -9;
 
 	int row;
 	for (row = 0; row < 3; row++)
 	{
-		display[row+4] = charset4x3[(num/10)][2 - row];
-		display[row] = charset4x3[(num % 10)][2 - row];
+		if (num >= 0)
+		{
+			display[row+4] = charset4x3[(num/10)][2 - row];
+			display[row] = charset4x3[(num % 10)][2 - row];
+		}
+		else
+		{
+			display[row+4] = charset4x3[minus_sign][2 - row];
+			display[row] = charset4x3[((-num))][2 - row];
+		}
 	}
 }
 

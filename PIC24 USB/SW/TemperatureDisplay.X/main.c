@@ -101,8 +101,8 @@ int16_t main(void)
 		AD1CON1bits.SAMP=1;         //start sample
 		while(!AD1CON1bits.DONE);
 		uint16_t result = ADC1BUF0;
-		uint16_t voltage = ((uint32_t)(result) * 3300) / 1023;
-		uint8_t temp = (((voltage - 500) / 5) + 1) / 2;
+		int16_t voltage = ((uint32_t)(result) * 3300) / 1023;
+		int8_t temp = (((voltage - 500) / 5) + 1) / 2;
 		Display2Digit5x3Num(temp);
 		
 		//lcdClear();
