@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 13.08.2014 16:59:31
+Cmp-Mod V01 Created by Cvpcb (2014-09-14 BZR 5132)-product   date = Mi 12 Nov 2014 21:00:22 CET
 
 BeginCmp
 TimeStamp = /52D43BC9;
@@ -99,6 +99,20 @@ IdModule  = SMD_Packages:SMD-0603_c;
 EndCmp
 
 BeginCmp
+TimeStamp = /5464427C;
+Reference = C15;
+ValeurCmp = 100n;
+IdModule  = SMD_Packages:SMD-0603_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54651E39;
+Reference = C16;
+ValeurCmp = 100n;
+IdModule  = SMD_Packages:SMD-0603_c;
+EndCmp
+
+BeginCmp
 TimeStamp = /53ED0E9A;
 Reference = CON1;
 ValeurCmp = USB-MINI-B;
@@ -172,7 +186,7 @@ BeginCmp
 TimeStamp = /52D8FEBD;
 Reference = P7;
 ValeurCmp = CONN_8;
-IdModule  = pin_array_8_50mil;
+IdModule  = ;
 EndCmp
 
 BeginCmp
@@ -220,20 +234,6 @@ EndCmp
 BeginCmp
 TimeStamp = /53E9F776/53E9FDA2;
 Reference = Q6;
-ValeurCmp = 2N7002;
-IdModule  = SMD_Packages:SOT-23-GDS;
-EndCmp
-
-BeginCmp
-TimeStamp = /53E9F776/53E9FD9C;
-Reference = Q7;
-ValeurCmp = 2N7002;
-IdModule  = SMD_Packages:SOT-23-GDS;
-EndCmp
-
-BeginCmp
-TimeStamp = /53E9F776/53E9FDB6;
-Reference = Q8;
 ValeurCmp = 2N7002;
 IdModule  = SMD_Packages:SOT-23-GDS;
 EndCmp
@@ -344,6 +344,48 @@ IdModule  = SMD_Packages:SMD-0603_r;
 EndCmp
 
 BeginCmp
+TimeStamp = /53E9F776/545ADDA7;
+Reference = R16;
+ValeurCmp = 330R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
+TimeStamp = /53E9F776/545ADDE0;
+Reference = R17;
+ValeurCmp = 330R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
+TimeStamp = /546436E1;
+Reference = R18;
+ValeurCmp = 0R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
+TimeStamp = /5464377C;
+Reference = R19;
+ValeurCmp = 0R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
+TimeStamp = /54651E19;
+Reference = R20;
+ValeurCmp = 0R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
+TimeStamp = /54651E1F;
+Reference = R21;
+ValeurCmp = 0R;
+IdModule  = SMD_Packages:SMD-0603_r;
+EndCmp
+
+BeginCmp
 TimeStamp = /53DA26B9/53DA2811;
 Reference = U1;
 ValeurCmp = PIC24FJXXXGB106;
@@ -376,6 +418,20 @@ TimeStamp = /53EC8FC0;
 Reference = U5;
 ValeurCmp = MCP9700;
 IdModule  = Discret:TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /54641A2F;
+Reference = U6;
+ValeurCmp = 24C16;
+IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /5464A69F;
+Reference = U7;
+ValeurCmp = TCN75;
+IdModule  = SMD_Packages:SOIC-8-N;
 EndCmp
 
 BeginCmp

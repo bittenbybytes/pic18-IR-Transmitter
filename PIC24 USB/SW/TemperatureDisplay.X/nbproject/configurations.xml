@@ -7,7 +7,7 @@
       <itemPath>system.h</itemPath>
       <itemPath>user.h</itemPath>
       <itemPath>LedMatrixDisplay.h</itemPath>
-      <itemPath>mcp_spi_dac.h</itemPath>
+      <itemPath>char_lcd_hd44780.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -23,7 +23,7 @@
       <itemPath>traps.c</itemPath>
       <itemPath>user.c</itemPath>
       <itemPath>LedMatrixDisplay.c</itemPath>
-      <itemPath>mcp_spi_dac.c</itemPath>
+      <itemPath>char_lcd_hd44780.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -39,12 +39,12 @@
     <conf name="XC16_24FJ256GA110" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC24FJ256GB106</targetDevice>
+        <targetDevice>PIC24FJ192GB106</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>1.22</languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -52,8 +52,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -105,6 +108,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -246,7 +252,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -254,8 +260,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -352,7 +361,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -360,8 +369,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -413,6 +425,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -536,7 +551,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -544,8 +559,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -642,7 +660,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -650,8 +668,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -703,6 +724,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -826,7 +850,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -834,8 +858,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -932,7 +959,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -940,8 +967,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -993,6 +1023,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -1116,7 +1149,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1124,8 +1157,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1222,7 +1258,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1230,8 +1266,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1283,6 +1322,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -1406,7 +1448,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1414,8 +1456,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1560,7 +1605,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1568,8 +1613,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1621,6 +1669,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -1744,7 +1795,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1752,8 +1803,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1850,7 +1904,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>1.23</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -1858,8 +1912,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -1911,6 +1968,9 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
       </C30>
+      <C30-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C30-AR>
       <C30-AS>
       </C30-AS>
       <C30-LD>
@@ -2034,7 +2094,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>C30</languageToolchain>
-        <languageToolchainVersion></languageToolchainVersion>
+        <languageToolchainVersion>3_31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -2042,8 +2102,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
