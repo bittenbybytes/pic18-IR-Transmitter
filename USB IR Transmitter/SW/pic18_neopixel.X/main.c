@@ -97,21 +97,30 @@ sendbyte(uint8_t in)
 
 }
 
-void sendRGB(uint8_t rgb[3])
+void sendRGB(uint8_t r, uint8_t g, uint8_t b)
 {
 	LED_TRIS = 0;
-	sendbyte(rgb[1]);
-	sendbyte(rgb[0]);
-	sendbyte(rgb[2]);
+	sendbyte(g);
+	sendbyte(r);
+	sendbyte(b);
 }
 
-uint8_t strip[60*3];
+uint8_t stripr[60];
+uint8_t stripg[60];
+uint8_t stripb[60];
 
 void delay_ms(uint32_t delay)
 {
 	for(uint32_t i = 0; i < delay; i++)
 		Delay100TCYx((clk/4)/100000);
 }
+
+#define floatToQ15(f) ((int)(f*65536.0))
+
+uint16_t start[4] = { floatToQ15(1-0.1),
+					floatToQ15(1-0.3),
+					floatToQ15(1-0.5),
+					floatToQ15(1-0.2)};
 
 void main(void)
 {
@@ -148,11 +157,13 @@ void main(void)
 //		strip[(i+30)*3 +2] = (i * 8);
 //	}
 
-	for (int i = 0; i < 60*3; i++)
+	for (int i = 0; i < 60; i++)
 	{
 		uint16_t val = (i/3)*4;
 		val *= val;
-		strip[i] = val >> 8;
+		stripr[i] = val >> 8;
+		stripg[i] = val >> 8;
+		stripb[i] = val >> 8;
 	}
 		
 
@@ -166,38 +177,47 @@ void main(void)
 //		strip[i*3+1+3] = (255*(3-i)/3);
 //		strip[i*3+2+3] = (255*(3-i)/3);
 //	}
-
+	uint16_t pos = UINT16_MAX;
 	while (1)
 	{
+		const uint16_t scale = (uint16_t)( 60.0);
+		uint16_t scaledPos = ((uint32_t)(pos) * (uint32_t)(scale)) >> 8;
+		uint16_t fPos = scaledPos & 0xff;
+		uint16_t iPos = scaledPos >> 8;
 
 		for(int i = 0; i < 60; i++)
 		{
-			sendRGB(&strip[i*3]);
+			uint16_t pixel = 0;
+
+			if(i == iPos)
+				pixel = (0x00FF * (0x00FF - fPos)) >> 8;
+
+			if(i == iPos+1)
+				pixel = (0x00FF * fPos) >> 8;
+
+			uint8_t pixelCorr = pixel; //(pixel * pixel) >> 8;
+			pixelCorr /= 4;
+
+			stripr[i] = pixelCorr;
+			stripg[i] = pixelCorr;
+			stripb[i] = pixelCorr;
+		}
+
+		for(int i = 0; i < 60; i++)
+		{
+			sendRGB(stripr[i], stripg[i], stripb[i]);
 		}
 
 		//LED Show
 		LED_PIN = 0;
+		
+		delay_ms(1);
+		pos -= 30;
+		static uint8_t x = 0;
+		if(pos<=(30))
+			pos = start[x++%4];
 
-		delay_ms(100);
-
-		led = !(led);
-		PORTBbits.RB4 = led;
-
-		uint8_t tmp[3];		
-		for(int i = 0; i < 3; i++)
-			tmp[i] = strip[59*3 +i];
-
-		for(int i = 59; i >= 0; --i)
-		{
-			strip[i * 3 +3] = strip[i * 3];
-			strip[i * 3 +1+3] = strip[i * 3 +1];
-			strip[i * 3 +2+3] = strip[i * 3 +2];
-		}
-
-		for(int i = 0; i < 3; i++)
-			strip[i] = tmp[i];
 	}
-
 
 }
 
