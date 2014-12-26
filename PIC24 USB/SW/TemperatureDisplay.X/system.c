@@ -4,15 +4,15 @@
 
 /* Device header file */
 #if defined(__XC16__)
-    #include <xc.h>
+#include <xc.h>
 #elif defined(__C30__)
-    #if defined(__PIC24E__)
-    	#include <p24Exxxx.h>
-    #elif defined (__PIC24F__)||defined (__PIC24FK__)
-	#include <p24Fxxxx.h>
-    #elif defined(__PIC24H__)
-	#include <p24Hxxxx.h>
-    #endif
+#if defined(__PIC24E__)
+#include <p24Exxxx.h>
+#elif defined (__PIC24F__)||defined (__PIC24FK__)
+#include <p24Fxxxx.h>
+#elif defined(__PIC24H__)
+#include <p24Hxxxx.h>
+#endif
 #endif
 
 #include <stdint.h>          /* For uint32_t definition */
@@ -41,21 +41,21 @@ __builtin functions. */
 void ConfigureOscillator(void)
 {
 
-#if 0
+#if 1
 
-        /* Disable Watch Dog Timer */
-        RCONbits.SWDTEN = 0;
+	/* Disable Watch Dog Timer */
+	RCONbits.SWDTEN = 0;
 
-        /* When clock switch occurs switch to Prim Osc (HS, XT, EC)with PLL */
-        __builtin_write_OSCCONH(0x03);  /* Set OSCCONH for clock switch */
-        __builtin_write_OSCCONL(0x01);  /* Start clock switching */
-        while(OSCCONbits.COSC != 0b011);
+	/* When clock switch occurs switch to Prim Osc (HS, XT, EC)with PLL */
+	__builtin_write_OSCCONH(0x03); /* Set OSCCONH for clock switch */
+	__builtin_write_OSCCONL(0x01); /* Start clock switching */
+	while (OSCCONbits.COSC != 0b011);
 
-        /* Wait for Clock switch to occur */
-        /* Wait for PLL to lock, if PLL is used */
-        /* while(OSCCONbits.LOCK != 1); */
+	/* Wait for Clock switch to occur */
+	/* Wait for PLL to lock, if PLL is used */
+	while(OSCCONbits.LOCK != 1);
 
 #endif
-        
+
 }
 
