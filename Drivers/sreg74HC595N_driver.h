@@ -13,15 +13,17 @@ extern "C"
 {
 #endif
 
-// pin out definition
-#define pclk 0
-#define sclk 1
-#define ser 2
+#include "arduino_GPIO.h"
 
-void writeSregBit(int nbit, int input);
+// pin out definition
+extern const int pclk;
+extern const int sclk;
+extern const int ser;
+
+void writeSregBit(char nbit, char input);
 void writeSreg(unsigned char data);
 void initSregIO();
-void writeSregLowNibble(int nibble);
+void writeSregLowNibble(char nibble);
 
 #ifdef	__cplusplus
 }

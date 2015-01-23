@@ -15,33 +15,33 @@ void initSregIO()
 	sregData = 0x00;
 }
 
-void writeSregBit(int nbit, int input)
+void writeSregBit(char nbit, char input)
 {
   sregData &= ~(1 << nbit); // clear bit
   sregData |= ((input !=0) << nbit); // set if input bit is non zero
   writeSreg(sregData);
 }
 
-void  writeSregLowNibble(int nibble)
+void  writeSregLowNibble(char nibble)
 {
   int reverseNibble = 0;
-  for(int i =0; i < 4; i++)
+  for(char i =0; i < 4; i++)
   {
     reverseNibble |= (nibble & 1 << i) ? 1 << (3-i):0;
   }
 
-  reg &= 0xF0; // clear nibble
-  reg |= reverseNibble & 0x0F; // write input nibble
-  writeSreg(reg);
+  sregData &= 0xF0; // clear nibble
+  sregData |= reverseNibble & 0x0F; // write input nibble
+  writeSreg(sregData);
 }
 
 void writeSreg(unsigned char data)
 {
 	digitalWrite(pclk, LOW);
 	digitalWrite(sclk, LOW);
-	for (int i = 0; i < 8; i++)
+	for (char i = 0; i < 8; i++)
 	{
-		digitalWrite(ser, (data & 1 << i));
+		digitalWrite(ser, (data & (1 << i))!=0);
 		digitalWrite(sclk, HIGH);
 		digitalWrite(sclk, LOW);
 	}

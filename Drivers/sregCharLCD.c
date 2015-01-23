@@ -9,18 +9,18 @@ static const char lcd_enable = 5;
 
 // LCD commands
 static const char lcd_4bit_if_cmd = 0x20;
-static const char lcd_cursor = 1;
-static const char lcd_cursor_blink = 1;
+#define lcd_cursor 1
+#define lcd_cursor_blink 1
 static const char lcd_enable_cmd = 0x0A;
-static const char lcd_on_cmd = 0x0C | lcd_cursor << 1 | lcd_cursor_blink;
+#define lcd_on_cmd (0x0C | lcd_cursor << 1 | lcd_cursor_blink)
 static const char lcd_clear_cmd = 0x01;
 static const char lcd_reset_cursor_pos_cmd = 0x02;
 static const char lcd_csr_cmd = 0x06;
 
 void lcdDelay()
 {
-	uint16_t i = 0;
-	for (i = 0; i < 0x4f; i++);
+	short i = 0;
+	for (i = 0; i < 0x4ff; i++);
 }
 
 void toggleLcdEnable()
@@ -71,6 +71,7 @@ void lcdPrint(const char* str)
 	while (str[i] != '\0' && i < 40)
 	{
 		writeLcdData(str[i]);
+		lcdDelay();
 		i++;
 	}
 }

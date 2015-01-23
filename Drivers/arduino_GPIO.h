@@ -33,6 +33,14 @@ extern "C"
 #define A4 -5
 #define A5 -6
 
+#define RX_PIN 1
+#define TX_PIN 2
+
+#define SCL_PIN 100
+#define SDA_PIN 101
+
+#define LED_PIN 13
+
 	/**
 	 * @brief Set the GPIO pin mode (direction).
 	 *
