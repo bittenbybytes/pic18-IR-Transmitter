@@ -27,7 +27,7 @@ const int pclk = 2;
 const int sclk = 3;
 const int ser = 4;
 #include "../../../Drivers/sregCharLCD.h"
-//#include "../../../Drivers/sreg74HC595N_driver.h"
+
 /******************************************************************************/
 /* User Global Variable Declaration                                           */
 /******************************************************************************/
@@ -50,16 +50,19 @@ void main(void)
 
     /* Initialize I/O and Peripherals for application */
     InitApp();
-
+	
 	initHD44780LCD();
+	wait();wait();
 	lcdClear();
+	wait();wait();
 	lcdPrint("Hello World!!!");
-
+	
     /* TODO <INSERT USER APPLICATION CODE HERE> */
-
 	pinMode(LED_PIN, OUTPUT);
+	ADCON1bits.PCFG = 0xF;
 
-	initSregIO();
+	for(uint16_t i = 0; i< 0x1f; i++)
+		wait();
 
     while(1)
     {
@@ -70,7 +73,16 @@ void main(void)
 		wait();
 		
 		//lcdClear();
-		//lcdPrint("Hello World!!!");
+		static unsigned int i =0;
+		char str[4] = {0};
+		str[0] = ('0' +((i/10000)%10));
+		str[1] = ('0' +((i/1000)%10));
+		str[2] = ('0' +((i/100)%10));
+		str[3] = ('0' +((i/10)%10));
+		str[4] = ('0' +((i)%10));
+		i++;
+		lcdSetCursorPosition(1,2);
+		lcdPrint(str);
     }
 
 }

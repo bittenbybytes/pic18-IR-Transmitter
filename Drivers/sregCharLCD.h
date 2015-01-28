@@ -22,6 +22,9 @@ void lcdPrint(const char* str);
 // clear display content
 void lcdClear();
 
+// set cursor position
+void lcdSetCursorPosition(char line, char pos);
+
 // reset position of the read/write cursor
 void lcdResetCursorPosition();
 

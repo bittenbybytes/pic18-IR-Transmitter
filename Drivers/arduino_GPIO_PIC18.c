@@ -140,6 +140,7 @@ void digitalWrite(int pin, unsigned level)
 		break;
 	case 13:
 		PORTBbits.RB4 = level;
+//		break;
 	case SCL_PIN:
 		PORTBbits.RB1 = level;
 		break;
