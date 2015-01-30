@@ -61,9 +61,6 @@ void main(void)
 	pinMode(LED_PIN, OUTPUT);
 	ADCON1bits.PCFG = 0xF;
 
-	for(uint16_t i = 0; i< 0x1f; i++)
-		wait();
-
     while(1)
     {
 //		PORTBbits.RB4 = 1;

@@ -109,6 +109,10 @@ extern "C"
 	 */
 	unsigned digitalRead(int pin);
 
+	void analogWrite(int pin, unsigned short value);
+
+	unsigned short analogRead(int pin);
+
 #ifdef	__cplusplus
 }
 #endif

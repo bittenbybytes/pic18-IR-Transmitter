@@ -186,3 +186,13 @@ unsigned digitalRead(int pin)
 		return LOW;
 	}
 }
+
+void analogWrite(int pin, unsigned short value)
+{
+
+}
+
+unsigned short analogRead(int pin)
+{
+	return 0;
+}
