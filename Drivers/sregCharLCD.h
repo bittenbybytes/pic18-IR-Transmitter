@@ -16,8 +16,11 @@ extern "C"
 // initialize display
 void initHD44780LCD();
 
+// print a single character
+void lcdPrintChar(const char c);
+
 // print a zero terminated character string
-void lcdPrint(const char* str);
+void lcdPrintStr(const char* str);
 
 // clear display content
 void lcdClear();
@@ -27,6 +30,9 @@ void lcdSetCursorPosition(char line, char pos);
 
 // reset position of the read/write cursor
 void lcdResetCursorPosition();
+
+// write a custom character to the character generator RAM
+void lcdSetCustomChar(const unsigned char location, const unsigned char* pattern);
 
 #ifdef	__cplusplus
 }

@@ -25,13 +25,13 @@ void lcdDelay()
 	for (i = 0; i < 0x4ff; i++);
 }
 
-void toggleLcdEnable()
+static void toggleLcdEnable()
 {
 	writeSregBit(lcd_enable, HIGH);
 	writeSregBit(lcd_enable, LOW);
 }
 
-void writeLcdByte(int lcdDataNotCommand, unsigned char data)
+static void writeLcdByte(int lcdDataNotCommand, unsigned char data)
 {
 	writeSregBit(lcd_rs, lcdDataNotCommand);
 	writeSregLowNibble(data >> 4);
@@ -40,12 +40,12 @@ void writeLcdByte(int lcdDataNotCommand, unsigned char data)
 	toggleLcdEnable();
 }
 
-void writeLcdData(unsigned char data)
+static void writeLcdData(unsigned char data)
 {
 	writeLcdByte(1, data);
 }
 
-void writeLcdCmd(unsigned char cmd)
+static void writeLcdCmd(unsigned char cmd)
 {
 	writeLcdByte(0, cmd);
 }
@@ -77,15 +77,19 @@ void initHD44780LCD()
 	writeLcdCmd(lcd_on_cmd);
 }
 
-// print a zero terminated character string
+// print a single character
+void lcdPrintChar(const char c)
+{
+	writeLcdData(c);
+}
 
-void lcdPrint(const char* str)
+// print a zero terminated character string
+void lcdPrintStr(const char* str)
 {
 	int i = 0;
 	while (str[i] != '\0' && i < 40)
 	{
-		writeLcdData(str[i]);
-		lcdDelay();
+		lcdPrintChar(str[i]);
 		i++;
 	}
 }
@@ -94,6 +98,7 @@ void lcdPrint(const char* str)
 void lcdClear()
 {
 	writeLcdCmd(lcd_clear_cmd);
+	lcdDelay();
 }
 
 static const unsigned char line_length = 0x40;
@@ -106,4 +111,15 @@ void lcdSetCursorPosition(char line, char pos)
 void lcdResetCursorPosition()
 {
 	writeLcdCmd(lcd_reset_cursor_pos_cmd);
+}
+
+// write a custom character to the character generator RAM
+void lcdSetCustomChar(const unsigned char location, const unsigned char* pattern)
+{
+	 unsigned char i;
+	if(location<8){
+		writeLcdCmd(0x40+(location*8));
+	for(i=0;i<8;i++)
+		writeLcdData(pattern[i]);
+	}
 }
