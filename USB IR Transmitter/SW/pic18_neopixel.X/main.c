@@ -122,6 +122,34 @@ uint16_t start[4] = { floatToQ15(1-0.1),
 					floatToQ15(1-0.5),
 					floatToQ15(1-0.2)};
 
+#define LUT_LENGTH 24
+uint8_t colorLut[LUT_LENGTH][3] =
+{{0xff, 0, 0},
+ {0xff, 0x40, 0},
+ {0xff, 0x80, 0},
+ {0xff, 0xc0, 0},
+ {0xff, 0xff, 0},
+ {0xc0, 0xff, 0},
+ {0x80, 0xff, 0},
+ {0x40, 0xff, 0},
+ {0x00, 0xff, 0},
+ {0x00, 0xff, 0x40},
+ {0x00, 0xff, 0x80},
+ {0x00, 0xff, 0xc0},
+ {0x00, 0xff, 0xff},
+ {0x00, 0xc0, 0xff},
+ {0x00, 0x80, 0xff},
+ {0x00, 0x40, 0xff},
+ {0x00, 0x00, 0xff},
+ {0x40, 0x00, 0xff},
+ {0x80, 0x00, 0xff},
+ {0xc0, 0x00, 0xff},
+ {0xff, 0x00, 0xc0},
+ {0xff, 0x00, 0x80},
+ {0xff, 0x00, 0x40},
+ {0xff, 0x00, 0x00}};
+
+
 void main(void)
 {
 	/* Configure the oscillator for the device */
@@ -138,84 +166,53 @@ void main(void)
 
 	LED_TRIS = 0;
 	LED_PIN = 0;
-	unsigned led = 0;
+
 	//LED Show
 	LED_PIN = 0;
 	Delay10KTCYx(200);
 
-//	for (int i = 0; i < 30; i++)
-//	{
-//		strip[i * 3] = (i * 4);
-//		strip[i * 3 +1] = (i * 16);
-//		strip[i * 3 +2] = ((30 - i)*8);
-//	}
-//
-//	for (int i = 0; i < 30; i++)
-//	{
-//		strip[(i+30)*3] = ((i + 30)*4);
-//		strip[(i+30)*3 +1] = (i * 16);
-//		strip[(i+30)*3 +2] = (i * 8);
-//	}
+
 
 	for (int i = 0; i < 60; i++)
 	{
-		uint16_t val = (i/3)*4;
-		val *= val;
-		stripr[i] = val >> 8;
-		stripg[i] = val >> 8;
-		stripb[i] = val >> 8;
+		uint8_t val = 0;
+		stripr[i] = val;
+		stripg[i] = val;
+		stripb[i] = val;
 	}
+	
+	//LED Show
+	LED_PIN = 0;
+	delay_ms(1);
+	LED_PIN = 1;
 		
-
-//	for(int i = 0; i < 3; i++)
-//	{
-//		strip[i*3+0] = (255*i/3);
-//		strip[i*3+1] = (255*i/3);
-//		strip[i*3+2] = (255*i/3);
-//
-//		strip[i*3+0+3] = (255*(3-i)/3);
-//		strip[i*3+1+3] = (255*(3-i)/3);
-//		strip[i*3+2+3] = (255*(3-i)/3);
-//	}
 	uint16_t pos = UINT16_MAX;
 	while (1)
 	{
-		const uint16_t scale = (uint16_t)( 60.0);
-		uint16_t scaledPos = ((uint32_t)(pos) * (uint32_t)(scale)) >> 8;
-		uint16_t fPos = scaledPos & 0xff;
-		uint16_t iPos = scaledPos >> 8;
-
-		for(int i = 0; i < 60; i++)
+		pos = (pos + 1);
+		for(int i = 0; i < 20; i++)
 		{
-			uint16_t pixel = 0;
-
-			if(i == iPos)
-				pixel = (0x00FF * (0x00FF - fPos)) >> 8;
-
-			if(i == iPos+1)
-				pixel = (0x00FF * fPos) >> 8;
-
-			uint8_t pixelCorr = pixel; //(pixel * pixel) >> 8;
-			pixelCorr /= 4;
-
-			stripr[i] = pixelCorr;
-			stripg[i] = pixelCorr;
-			stripb[i] = pixelCorr;
+			const uint8_t idx = (i+pos) % (LUT_LENGTH);
+			stripr[i] = colorLut[idx][0];
+			stripg[i] = colorLut[idx][1];
+			stripb[i] = colorLut[idx][2];
 		}
 
-		for(int i = 0; i < 60; i++)
+		for(int i = 0; i < 20; i++)
 		{
 			sendRGB(stripr[i], stripg[i], stripb[i]);
+			
+//			for(int j = 0; j < 5; j++)
+				sendRGB(0, 0, 0);
+				sendRGB(0, 0, 0);
 		}
 
 		//LED Show
 		LED_PIN = 0;
-		
 		delay_ms(1);
-		pos -= 30;
-		static uint8_t x = 0;
-		if(pos<=(30))
-			pos = start[x++%4];
+		LED_PIN = 1;
+
+		delay_ms(50);
 
 	}
 
