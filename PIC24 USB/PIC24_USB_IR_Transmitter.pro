@@ -1,8 +1,6 @@
-update=Son 29 Nov 2015 18:16:14 CET
+update=Sam 12 Dez 2015 01:47:09 CET
 version=1
 last_client=kicad
-[general]
-version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -89,3 +87,5 @@ LibName31=valves
 LibName32=CircuitHub
 LibName33=microchip_hele
 LibName34=led_hele
+[general]
+version=1
