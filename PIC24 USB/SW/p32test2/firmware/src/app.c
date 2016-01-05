@@ -218,8 +218,6 @@ void toggleLedForever()
         
         static int adcVal = 0x1234;
         
-       //  && (num%256 == 0))
-       //   Nop();//adcVal = DRV_ADC_SamplesRead(0);
         if((num%256 == 0))
         {   
             adcVal++;
@@ -232,24 +230,27 @@ void toggleLedForever()
         
         writeReg(GPIOA, 0x0F);
         
-         char adcHexDigit = (adcVal >> (4*(num%4))) & 0xf;
+        char adcHexDigit = (adcVal >> (4*(num%4))) & 0xf;
         
         int voltage = (adcVal*3300) / 1024;
         
         int temp = (voltage - 500) / 10;
         
-        char digit = 16;
-        if ((num%4) == 1)
-            digit = abs(temp) / 10;
-        else if((num%4) == 0)
-            digit = abs(temp) % 10;
-        else if((num%4) == 2 && temp < 0)
-            digit = 18;
+        int digit = 16;
         
+        int nDigit = (num%4);
+        
+        if (nDigit == 1)
+            digit = abs(temp) / 10;
+        else if(nDigit == 0)
+            digit = abs(temp) % 10;
+        else if(nDigit == 2 && temp < 0)
+            digit = 18;
         
         writeReg(GPIOB, ~(numberPattern[digit]));  
         
         writeReg(GPIOA, 0x0F & (~(1 << (num%4))));
+      
     }
 }
 
