@@ -55,15 +55,11 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/clk/sys_clk.h"
 #include "system/clk/sys_clk_static.h"
 #include "system/devcon/sys_devcon.h"
-#include "system/int/sys_int.h"
 #include "driver/adc/drv_adc_static.h"
 #include "driver/i2c/drv_i2c_static.h"
 #include "system/ports/sys_ports.h"
-#include "driver/usb/usbfs/drv_usbfs.h"
-#include "usb/usb_device.h"
 
 
-#include "usb/usb_device_cdc.h"
 #include "app.h"
 
 
@@ -99,11 +95,6 @@ extern "C" {
 typedef struct
 {
     SYS_MODULE_OBJ  sysDevcon;
-    SYS_MODULE_OBJ  drvUSBObject;
-    
-    SYS_MODULE_OBJ  usbDevObject0;
-
-
 
 } SYSTEM_OBJECTS;
 
@@ -115,7 +106,6 @@ typedef struct
 // *****************************************************************************
 
 extern SYSTEM_OBJECTS sysObj;
-
 
 
 //DOM-IGNORE-BEGIN

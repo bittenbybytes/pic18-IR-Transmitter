@@ -73,18 +73,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 
 
- 	
-	
-	
-void __ISR(_USB_1_VECTOR, ipl4AUTO) _IntHandlerUSBInstance0(void)
-{
-
-    DRV_USBFS_Tasks_ISR(sysObj.drvUSBObject);
-            
-}
-
-
- 
+  
 /*******************************************************************************
  End of File
 */

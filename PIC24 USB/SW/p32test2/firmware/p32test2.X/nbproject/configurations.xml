@@ -30,31 +30,18 @@
         <itemPath>i2c2Master.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
-        <logicalFolder name="f2" displayName="driver" projectFiles="true">
-          <logicalFolder name="f1" displayName="usb" projectFiles="true">
-            <itemPath>../../../../framework/driver/usb/drv_usb.h</itemPath>
-          </logicalFolder>
-        </logicalFolder>
         <logicalFolder name="f1" displayName="system" projectFiles="true">
           <logicalFolder name="f1" displayName="common" projectFiles="true">
-            <itemPath>../../../../framework/system/common/sys_common.h</itemPath>
-            <itemPath>../../../../framework/system/common/sys_module.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/common/sys_common.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/common/sys_module.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="devcon" projectFiles="true">
-            <itemPath>../../../../framework/system/devcon/sys_devcon.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/devcon/sys_devcon.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f3" displayName="int" projectFiles="true">
-            <itemPath>../../../../framework/system/int/sys_int.h</itemPath>
+          <logicalFolder name="f3" displayName="ports" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/ports/sys_ports.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f4" displayName="ports" projectFiles="true">
-            <itemPath>../../../../framework/system/ports/sys_ports.h</itemPath>
-          </logicalFolder>
-          <itemPath>../../../../framework/system/system.h</itemPath>
-        </logicalFolder>
-        <logicalFolder name="f3" displayName="usb" projectFiles="true">
-          <itemPath>../../../../framework/usb/usb_device.h</itemPath>
-          <itemPath>../../../../framework/usb/usb_cdc.h</itemPath>
-          <itemPath>../../../../framework/usb/usb_device_cdc.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/system.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -105,42 +92,16 @@
         <itemPath>i2c2Master.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
-        <logicalFolder name="f2" displayName="driver" projectFiles="true">
-          <logicalFolder name="f1" displayName="usb" projectFiles="true">
-            <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
-              <logicalFolder name="f1" displayName="src" projectFiles="true">
-                <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
-                  <itemPath>../../../../framework/driver/usb/usbfs/src/dynamic/drv_usbfs.c</itemPath>
-                  <itemPath>../../../../framework/driver/usb/usbfs/src/dynamic/drv_usbfs_device.c</itemPath>
-                </logicalFolder>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
-        </logicalFolder>
         <logicalFolder name="f1" displayName="system" projectFiles="true">
           <logicalFolder name="f1" displayName="devcon" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../framework/system/devcon/src/sys_devcon.c</itemPath>
-              <itemPath>../../../../framework/system/devcon/src/sys_devcon_pic32mx.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/devcon/src/sys_devcon.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/devcon/src/sys_devcon_pic32mx.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f2" displayName="int" projectFiles="true">
+          <logicalFolder name="f2" displayName="ports" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../framework/system/int/src/sys_int_pic32.c</itemPath>
-            </logicalFolder>
-          </logicalFolder>
-          <logicalFolder name="f3" displayName="ports" projectFiles="true">
-            <logicalFolder name="f1" displayName="src" projectFiles="true">
-              <itemPath>../../../../framework/system/ports/src/sys_ports.c</itemPath>
-            </logicalFolder>
-          </logicalFolder>
-        </logicalFolder>
-        <logicalFolder name="f3" displayName="usb" projectFiles="true">
-          <logicalFolder name="f1" displayName="src" projectFiles="true">
-            <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
-              <itemPath>../../../../framework/usb/src/dynamic/usb_device.c</itemPath>
-              <itemPath>../../../../framework/usb/src/dynamic/usb_device_cdc.c</itemPath>
-              <itemPath>../../../../framework/usb/src/dynamic/usb_device_cdc_acm.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_06_02/framework/system/ports/src/sys_ports.c</itemPath>
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
@@ -154,8 +115,8 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
-    <Elem>../..</Elem>
     <Elem>../src/system_config/default</Elem>
+    <Elem>../../../../microchip/harmony/v1_06_02</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -173,7 +134,7 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>../../../../bin/framework/peripheral/PIC32MX470F512H_peripherals.a</linkerLibFileItem>
+            <linkerLibFileItem>../../../../../../microchip/harmony/v1_06_02/bin/framework/peripheral/PIC32MX470F512H_peripherals.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -201,7 +162,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/system_config/default;../../../../framework;../src/system_config/default/framework"/>
+                  value="../src;../src/system_config/default;../../../../framework;../src/system_config/default/framework;/home/hele/microchip/harmony/v1_06_02/framework;../../../../../../microchip/harmony/v1_06_02/framework"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

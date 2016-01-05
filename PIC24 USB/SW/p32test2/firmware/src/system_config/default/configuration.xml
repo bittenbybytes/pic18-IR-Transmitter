@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration version="1.0.7.9">
   <General>
-    <HarmonyPath path="../.."/>
+    <HarmonyPath path="../../../../microchip/harmony/v1_06_02"/>
     <ForceOptimization flag="true"/>
   </General>
   <Manifest>
     <Files>
       <File>
-        <Name>drv_usbfs.c</Name>
-        <Path>Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
-      </File>
-      <File>
         <Name>sys_devcon.c</Name>
         <Path>Source Files/framework/system/devcon/src</Path>
       </File>
       <File>
-        <Name>usb_device.h</Name>
-        <Path>Header Files/framework/usb</Path>
-      </File>
-      <File>
         <Name>sys_ports.c</Name>
         <Path>Source Files/framework/system/ports/src</Path>
-      </File>
-      <File>
-        <Name>usb_device_cdc.h</Name>
-        <Path>Header Files/framework/usb</Path>
       </File>
       <File>
         <Name>sys_devcon.h</Name>
@@ -35,20 +23,8 @@
         <Path>Header Files/framework/system</Path>
       </File>
       <File>
-        <Name>drv_usbfs_device.c</Name>
-        <Path>Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
-      </File>
-      <File>
-        <Name>usb_device_cdc_acm.c</Name>
-        <Path>Source Files/framework/usb/src/dynamic</Path>
-      </File>
-      <File>
         <Name>sys_module.h</Name>
         <Path>Header Files/framework/system/common</Path>
-      </File>
-      <File>
-        <Name>usb_cdc.h</Name>
-        <Path>Header Files/framework/usb</Path>
       </File>
       <File>
         <Name>sys_ports.h</Name>
@@ -62,26 +38,6 @@
         <Name>sys_common.h</Name>
         <Path>Header Files/framework/system/common</Path>
       </File>
-      <File>
-        <Name>sys_int_pic32.c</Name>
-        <Path>Source Files/framework/system/int/src</Path>
-      </File>
-      <File>
-        <Name>usb_device_cdc.c</Name>
-        <Path>Source Files/framework/usb/src/dynamic</Path>
-      </File>
-      <File>
-        <Name>sys_int.h</Name>
-        <Path>Header Files/framework/system/int</Path>
-      </File>
-      <File>
-        <Name>usb_device.c</Name>
-        <Path>Source Files/framework/usb/src/dynamic</Path>
-      </File>
-      <File>
-        <Name>drv_usb.h</Name>
-        <Path>Header Files/framework/driver/usb</Path>
-      </File>
     </Files>
     <Templates>
       <Template>
@@ -92,7 +48,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>E28D87AF3992463F4DEEF86A21801C1D</Checksum>
+        <Checksum>43E347FBAD59E639F59D70ADB7EDB7DD</Checksum>
       </Template>
       <Template>
         <Name>drv_i2c_static.c</Name>
@@ -106,7 +62,7 @@
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/default</Path>
-        <Checksum>B5CF31B33B5F127336C7A071E0DBFC5C</Checksum>
+        <Checksum>4D979F7570D9898A73F81C7697239D6A</Checksum>
       </Template>
       <Template>
         <Name>system_exceptions.c</Name>
@@ -135,12 +91,12 @@
       <Template>
         <Name>system_tasks.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>C051440866B3433982D20908212CADC7</Checksum>
+        <Checksum>BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
       </Template>
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/default</Path>
-        <Checksum>7C653007048D88739110B7954059C00D</Checksum>
+        <Checksum>4AE2AC661BDA95C71CB1D333D5242871</Checksum>
       </Template>
       <Template>
         <Name>app.h</Name>
@@ -154,7 +110,7 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>47A5076AA91BAE06631DEEC4F640395C</Checksum>
+        <Checksum>9AC33B2960C8DF72C5EB0E3662303FF4</Checksum>
       </Template>
       <Template>
         <Name>sys_clk_static.c</Name>
@@ -163,7 +119,7 @@
       </Template>
     </Templates>
     <Libraries>
-      <Library value="../../../../bin/framework/peripheral/PIC32MX470F512H_peripherals.a"/>
+      <Library value="../../../../../../microchip/harmony/v1_06_02/bin/framework/peripheral/PIC32MX470F512H_peripherals.a"/>
     </Libraries>
   </Manifest>
 </configuration>

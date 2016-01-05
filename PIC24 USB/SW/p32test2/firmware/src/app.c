@@ -54,10 +54,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 
 #include "app.h"
-#include "usb/usb_device_cdc.h"
 
 #include "i2c2Master.h"
-#include "driver/adc/drv_adc_static.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -192,8 +190,6 @@ void writeReg(uint8_t address, uint8_t data)
 
 void toggleLedForever()
 {   
-    USB_DEVICE_CDC_RESULT writeRequestResult;
-    
     volatile int num = 0;
     
     writeReg(IODIRA, 0x00);
@@ -207,8 +203,6 @@ void toggleLedForever()
     DRV_ADC_Start();
     
     /* Open the Device Layer */
-
-    USB_DEVICE_Open();
     
     LATF = 0;
     volatile int i = 0;
@@ -219,15 +213,6 @@ void toggleLedForever()
             LATFINV = 0x00000002;
     
         for(i = 0; i < 0x3fff; i++);
-       
-        char c[] = "A";
-        writeRequestResult = USB_DEVICE_CDC_Write(USB_DEVICE_CDC_INDEX_0,
-                &handle, c, 1, USB_DEVICE_CDC_TRANSFER_FLAGS_DATA_COMPLETE);
-      
-        if(USB_DEVICE_CDC_RESULT_OK != writeRequestResult)
-        {
-            //Do Error handling here
-        }
         
         num++;
         
