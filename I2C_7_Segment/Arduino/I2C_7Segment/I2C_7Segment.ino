@@ -85,6 +85,9 @@ void setup()
   write(GPPUA, 0xff);
   write(GPPUB, 0xff);
   pinMode(13, OUTPUT);
+  write(GPIOA, 0x7);
+  write(GPIOB, 0x00);
+  while(1);
 }
 
 char displayBuffer[4] = {
@@ -170,6 +173,7 @@ void displayHex(unsigned short val)
 short x = 0;
 void loop()
 {
+  digitalWrite(13, 1);
   for(int i =0; i<4; i++)
   {
     writeDigit(i, displayBuffer[i]);

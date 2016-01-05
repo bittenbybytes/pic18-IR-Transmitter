@@ -59,7 +59,7 @@ inline void MatrixDisplayMultiplexingTask()
 	static uint8_t row = 0; // row counter to be incremented within calls to scan across the matrix
 
 	// select the current row and light it up according to the correspondin row in the display buffer
-	MATRIXPORT = ((~display[row] & 0x1F) << 7) + (1 << row);
+	MATRIXPORT = ((display[row] & 0x1F) << 7) + (1 << (6 - row));
 
 	// proceed to the next row or go back to the first one in the next call
 	if (++row >= LED_MATRIX_NUM_OF_ROWS)
