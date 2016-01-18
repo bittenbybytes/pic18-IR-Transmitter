@@ -1,0 +1,62 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# PIC24FJ64GB002 configuration
+CND_ARTIFACT_DIR_PIC24FJ64GB002=dist/PIC24FJ64GB002/production
+CND_ARTIFACT_NAME_PIC24FJ64GB002=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC24FJ64GB002=dist/PIC24FJ64GB002/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC24FJ64GB002=${CND_DISTDIR}/PIC24FJ64GB002/package
+CND_PACKAGE_NAME_PIC24FJ64GB002=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC24FJ64GB002=${CND_DISTDIR}/PIC24FJ64GB002/package/usbcdcacmuart.x.tar
+# PIC24FJ64GB002-bootloader configuration
+CND_ARTIFACT_DIR_PIC24FJ64GB002-bootloader=dist/PIC24FJ64GB002-bootloader/production
+CND_ARTIFACT_NAME_PIC24FJ64GB002-bootloader=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC24FJ64GB002-bootloader=dist/PIC24FJ64GB002-bootloader/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC24FJ64GB002-bootloader=${CND_DISTDIR}/PIC24FJ64GB002-bootloader/package
+CND_PACKAGE_NAME_PIC24FJ64GB002-bootloader=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC24FJ64GB002-bootloader=${CND_DISTDIR}/PIC24FJ64GB002-bootloader/package/usbcdcacmuart.x.tar
+# PIC24FJ256DA206 configuration
+CND_ARTIFACT_DIR_PIC24FJ256DA206=dist/PIC24FJ256DA206/production
+CND_ARTIFACT_NAME_PIC24FJ256DA206=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC24FJ256DA206=dist/PIC24FJ256DA206/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC24FJ256DA206=${CND_DISTDIR}/PIC24FJ256DA206/package
+CND_PACKAGE_NAME_PIC24FJ256DA206=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC24FJ256DA206=${CND_DISTDIR}/PIC24FJ256DA206/package/usbcdcacmuart.x.tar
+# PIC24FJ256DA206-bootloader configuration
+CND_ARTIFACT_DIR_PIC24FJ256DA206-bootloader=dist/PIC24FJ256DA206-bootloader/production
+CND_ARTIFACT_NAME_PIC24FJ256DA206-bootloader=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC24FJ256DA206-bootloader=dist/PIC24FJ256DA206-bootloader/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC24FJ256DA206-bootloader=${CND_DISTDIR}/PIC24FJ256DA206-bootloader/package
+CND_PACKAGE_NAME_PIC24FJ256DA206-bootloader=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC24FJ256DA206-bootloader=${CND_DISTDIR}/PIC24FJ256DA206-bootloader/package/usbcdcacmuart.x.tar
+# PIC18_Starter_Kit_PIC18F46J50 configuration
+CND_ARTIFACT_DIR_PIC18_Starter_Kit_PIC18F46J50=dist/PIC18_Starter_Kit_PIC18F46J50/production
+CND_ARTIFACT_NAME_PIC18_Starter_Kit_PIC18F46J50=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC18_Starter_Kit_PIC18F46J50=dist/PIC18_Starter_Kit_PIC18F46J50/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC18_Starter_Kit_PIC18F46J50=${CND_DISTDIR}/PIC18_Starter_Kit_PIC18F46J50/package
+CND_PACKAGE_NAME_PIC18_Starter_Kit_PIC18F46J50=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC18_Starter_Kit_PIC18F46J50=${CND_DISTDIR}/PIC18_Starter_Kit_PIC18F46J50/package/usbcdcacmuart.x.tar
+# PIC16F1459 configuration
+CND_ARTIFACT_DIR_PIC16F1459=dist/PIC16F1459/production
+CND_ARTIFACT_NAME_PIC16F1459=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC16F1459=dist/PIC16F1459/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC16F1459=${CND_DISTDIR}/PIC16F1459/package
+CND_PACKAGE_NAME_PIC16F1459=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC16F1459=${CND_DISTDIR}/PIC16F1459/package/usbcdcacmuart.x.tar
+# PIC16F1454 configuration
+CND_ARTIFACT_DIR_PIC16F1454=dist/PIC16F1454/production
+CND_ARTIFACT_NAME_PIC16F1454=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC16F1454=dist/PIC16F1454/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC16F1454=${CND_DISTDIR}/PIC16F1454/package
+CND_PACKAGE_NAME_PIC16F1454=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC16F1454=${CND_DISTDIR}/PIC16F1454/package/usbcdcacmuart.x.tar
+# PIC32_USB_Starter_Board_PIC32MX460F512L configuration
+CND_ARTIFACT_DIR_PIC32_USB_Starter_Board_PIC32MX460F512L=dist/PIC32_USB_Starter_Board_PIC32MX460F512L/production
+CND_ARTIFACT_NAME_PIC32_USB_Starter_Board_PIC32MX460F512L=usb_cdc_acm_uart.X.production.hex
+CND_ARTIFACT_PATH_PIC32_USB_Starter_Board_PIC32MX460F512L=dist/PIC32_USB_Starter_Board_PIC32MX460F512L/production/usb_cdc_acm_uart.X.production.hex
+CND_PACKAGE_DIR_PIC32_USB_Starter_Board_PIC32MX460F512L=${CND_DISTDIR}/PIC32_USB_Starter_Board_PIC32MX460F512L/package
+CND_PACKAGE_NAME_PIC32_USB_Starter_Board_PIC32MX460F512L=usbcdcacmuart.x.tar
+CND_PACKAGE_PATH_PIC32_USB_Starter_Board_PIC32MX460F512L=${CND_DISTDIR}/PIC32_USB_Starter_Board_PIC32MX460F512L/package/usbcdcacmuart.x.tar

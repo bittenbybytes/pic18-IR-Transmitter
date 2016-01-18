@@ -193,18 +193,16 @@ void main(void)
 		for(int i = 0; i < 20; i++)
 		{
 			const uint8_t idx = (i+pos) % (LUT_LENGTH);
-			stripr[i] = colorLut[idx][0];
-			stripg[i] = colorLut[idx][1];
-			stripb[i] = colorLut[idx][2];
+			stripr[i] = colorLut[idx][0]/3;
+			stripg[i] = colorLut[idx][1]/3;
+			stripb[i] = colorLut[idx][2]/3;
 		}
 
 		for(int i = 0; i < 20; i++)
 		{
 			sendRGB(stripr[i], stripg[i], stripb[i]);
-			
-//			for(int j = 0; j < 5; j++)
-				sendRGB(0, 0, 0);
-				sendRGB(0, 0, 0);
+			sendRGB(stripr[i], stripg[i], stripb[i]);
+			sendRGB(stripr[i], stripg[i], stripb[i]);
 		}
 
 		//LED Show
