@@ -30,6 +30,7 @@
 
 #include <outcompare.h>
 #include <PPS.h>
+#include "i2c2Master.h"
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */
@@ -42,6 +43,38 @@ unsigned short spi1Write(unsigned short i);
 unsigned short readADC(unsigned short ch);
 
 void writeDAC(DacCommand cmd);
+
+void writeReg(uint8_t address, uint8_t data);
+
+const uint8_t IODIRA = 0x00;
+const uint8_t IODIRB = 0x01;
+
+const uint8_t IOCON = 0x0A;
+
+const uint8_t GPIOA = 0x12;
+const uint8_t GPIOB = 0x13;
+
+const uint8_t GPPUA = 0x0C;
+const uint8_t GPPUB = 0x0D;
+
+char numberPattern[] = {
+  0x3F, // 0
+  0x06, // 1
+  0x5B, // 2
+  0x4F, // 3
+  0x66, // 4
+  0x6D, // 5
+  0x7D, // 6
+  0x07, // 7
+  0x7F, // 8
+  0x6F, // 9
+  0x77, // A
+  0x7C, // b
+  0x39, // C
+  0x5E, // d
+  0x79, // E
+  0x71 // F
+};
 
 /******************************************************************************/
 /* Main Program                                                               */
@@ -67,7 +100,12 @@ int16_t main(void)
 	TRISFbits.TRISF1 = 0;
 
 	lcdPrint("Start");
+    
+    initI2C2Master();
 
+    writeReg(IODIRA, 0x00);      
+    writeReg(IODIRB, 0x00);
+    
 	while (1)
 	{
 		DacCommand cmd;
@@ -115,7 +153,21 @@ int16_t main(void)
 		for (i = 0; i < 0x03ff; i++);
 		if(!(num % 256))
 			PORTFbits.RF1 = !PORTFbits.RF1;
+        
+ 
+        writeReg(GPIOA, 0x0F);
+        
+        writeReg(GPIOB, ~(numberPattern[(num%4)]));  
+        
+        writeReg(GPIOA, 0x0F & (~(1 << (num%4))));
+            
 	}
+}
+
+
+void writeReg(uint8_t address, uint8_t data)
+{
+    I2Cwrite((0x20 + 0x07) << 1, address, data);
 }
 
 // send one byte of data and receive one back at the same time

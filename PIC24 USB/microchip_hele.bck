@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MCP9700
+D Active Thermistor IC
+K temperature sensor analog microchip to92 sot23
+$ENDCMP
+#
 #End Doc Library

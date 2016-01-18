@@ -5,4 +5,9 @@ D Active Thermistor IC
 K temperature sensor analog microchip to92 sot23
 $ENDCMP
 #
+$CMP TCN75
+D I2C/SMBUS Temp Sensor and Thermal Monitor by Microchip
+K I2C, Temp Sensor, microchip
+$ENDCMP
+#
 #End Doc Library
