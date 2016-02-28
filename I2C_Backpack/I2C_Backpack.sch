@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:test-cache
 LIBS:mcp23017_qfn28
+LIBS:I2C_Backpack-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
