@@ -136,9 +136,9 @@ F 3 "" H 3400 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4500 4950 0    60   ~ 0
-LCD_RS
-Text Label 4500 4850 0    60   ~ 0
 LCD_E
+Text Label 4500 4850 0    60   ~ 0
+LCD_RS
 $Comp
 L GND #PWR15
 U 1 1 56D32AF9
